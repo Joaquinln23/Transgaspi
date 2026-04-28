@@ -1,0 +1,105 @@
+#por-que {
+  background: var(--black);
+  position: relative;
+  overflow: hidden;
+  padding: var(--gap) clamp(20px, 6vw, 100px);
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(40px, 6vw, 100px);
+  align-items: center;
+  margin-top: 64px;
+}
+
+.why-visual {
+  position: relative;
+  height: 480px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--dark-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+  border: 1px dashed rgba(245,168,0,0.2);
+}
+.why-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.why-accent {
+  position: absolute;
+  bottom: -2px; right: -2px;
+  background: var(--yellow);
+  color: var(--black);
+  padding: 20px 28px;
+  border-radius: var(--radius) 0 0 0;
+}
+.why-accent-num {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 44px;
+  line-height: 1;
+}
+.why-accent-text {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.why-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.why-item {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.why-icon {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  background: rgba(245,168,0,0.1);
+  border: 1px solid rgba(245,168,0,0.2);
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--yellow);
+  font-size: 22px;
+  transition: background 0.3s;
+}
+.why-item:hover .why-icon { background: rgba(245,168,0,0.2); }
+
+.why-text h3 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--white);
+  margin-bottom: 6px;
+}
+.why-text p {
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--steel);
+  line-height: 1.65;
+}
+@media (max-width: 900px) {
+  .why-grid { grid-template-columns: 1fr; }
+  .why-visual { height: 280px; }
+}
+@media (max-width: 600px) {
+  .why-visual { height: 220px; }
+  .why-list { gap: 24px; }
+}

@@ -1,0 +1,50 @@
+.float-wa {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  z-index: 999;
+  background: var(--whatsapp);
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 24px rgba(37,211,102,0.4);
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  animation: float-pulse 2.5s ease-in-out infinite;
+  text-decoration: none;
+}
+.float-wa:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 32px rgba(37,211,102,0.6);
+}
+@keyframes float-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.06); }
+}
+.float-wa svg { width: 30px; height: 30px; fill: #fff; }
+
+.float-wa-tooltip {
+  position: absolute;
+  right: 72px;
+  background: var(--black);
+  color: var(--white);
+  font-family: 'Barlow', sans-serif;
+  font-size: 13px;
+  padding: 8px 14px;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+.float-wa:hover .float-wa-tooltip { opacity: 1; }
+@media (max-width: 600px) {
+  .float-wa { bottom: 20px; right: 16px; width: 52px; height: 52px; }
+  .float-wa svg { width: 26px; height: 26px; }
+  .float-wa-tooltip { display: none; }
+}
