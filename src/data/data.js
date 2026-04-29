@@ -12,15 +12,13 @@ export const COMPANY = {
 };
 
 export const IMAGES = {
-  hero: '/assets/hero.jpg',
-  headerGrua: '/assets/HeroGrua.jpg',
+  headerGrua: '/assets/maquinarias/volswagen2.jpeg',
   porque: '/assets/Porque.jpg',
   maquinaria: {
-    'Excavadora Doosan DX 140LC': '/assets/GridMaquinariaExcavadoraHidraulica.jpg',
-    'Camión Tolva VW Constellation': '/assets/GridMaquinariaCamionArticulado.jpg',
-    'Retroexcavadora New Holland': '/assets/GridMaquinariaRetroexcavadora.jpg',
-    'Minicargador Bobcat': '/assets/GridMaquinariaRodilloCompactador.jpg', // Reusando imagen por ahora
-    'Bulldozer': '/assets/GridMaquinariaBulldozer.jpg', // Reusando imagen por ahora
+    'Excavadora Doosan DX 140LC': '/assets/maquinarias/doosan1.jpeg',
+    'Camión Tolva VW Constellation': '/assets/maquinarias/volswagen2.jpeg',
+    'Retroexcavadora New Holland': '/assets/maquinarias/newholland1.jpeg',
+    'Minicargador Bobcat': '/assets/maquinarias/bobcat6.jpeg'
   }
 };
 

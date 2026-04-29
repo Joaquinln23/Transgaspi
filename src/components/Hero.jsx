@@ -50,7 +50,14 @@ export default function Hero() {
             Maquinaria pesada de construcción disponible cuando la necesitas. Flota moderna,
             mantenimiento garantizado y soporte técnico 24/7.
           </p>
-          <div className="hero-actions">
+          <div className="hero-actions">            
+            <a
+              href="#maquinaria"
+              className="btn-ghost"
+              onClick={(e) => { e.preventDefault(); scrollTo('#maquinaria'); }}
+            >
+              Ver Maquinaria →
+            </a>
             <a
               href={waLink('Hola, quiero cotizar maquinaria')}
               target="_blank"
@@ -59,13 +66,6 @@ export default function Hero() {
             >
               <WhatsAppIcon size={18} color="currentColor" />
               Cotizar por WhatsApp
-            </a>
-            <a
-              href="#maquinaria"
-              className="btn-ghost"
-              onClick={(e) => { e.preventDefault(); scrollTo('#maquinaria'); }}
-            >
-              Ver Maquinaria →
             </a>
           </div>
         </div>
