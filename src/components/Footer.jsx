@@ -39,7 +39,7 @@ export default function Footer() {
               <li><a href="https://wa.me/56957914521" target="_blank" rel="noreferrer">Maritza Ortega: +569 5791 4521</a></li>
               <li><a href="https://wa.me/56971952395" target="_blank" rel="noreferrer">Nelson Ortega: +569 7195 2395</a></li>
               <li>{COMPANY.address}</li>
-              <li>{COMPANY.email}</li>
+              <li><a href={`mailto:${COMPANY.email}`}>{COMPANY.email}</a></li>
             </ul>
           </div>
         </div>
