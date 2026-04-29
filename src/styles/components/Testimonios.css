@@ -11,7 +11,7 @@
 }
 
 .testimonial-card {
-  background: var(--dark-2);
+  background: rgba(255, 255, 255, 0.03);
   padding: 36px 32px;
   border-radius: var(--radius);
   border: 1px solid rgba(255,255,255,0.04);
@@ -19,9 +19,10 @@
 }
 .testimonial-card::before {
   content: '"';
+  padding-top: 1%;
   font-family: 'Bebas Neue', sans-serif;
   font-size: 120px;
-  color: rgba(245,168,0,0.08);
+  color: rgba(245,168,0,0.15);
   position: absolute;
   top: -10px; left: 20px;
   line-height: 1;

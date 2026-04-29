@@ -8,7 +8,7 @@ export default function PorQue() {
     { icon: <ShieldCheck size={24} />, title: 'Flota 100% Asegurada', desc: 'Toda nuestra maquinaria cuenta con seguros vigentes. Operamos con total respaldo ante cualquier eventualidad en faena.' },
     { icon: <Zap size={24} />, title: 'Respuesta Inmediata', desc: 'Cotización en menos de 30 minutos por WhatsApp. Despacho a partir del día siguiente para urgencias confirmadas.' },
     { icon: <Shield size={24} />, title: 'Maquinaria Certificada', desc: 'Toda la flota cumple con las normativas vigentes de la SUSESO y posee revisiones técnicas al día.' },
-    { icon: <Briefcase size={24} />, title: 'Experiencia Comprobada', desc: 'Más de 500 proyectos ejecutados con éxito en construcción, minería, agricultura y obras de infraestructura.' }
+    { icon: <Briefcase size={24} />, title: 'Experiencia Comprobada', desc: 'Proyectos ejecutados con éxito en construcción, minería, agricultura y obras de infraestructura.' }
   ];
 
   return (
@@ -24,7 +24,7 @@ export default function PorQue() {
               alt="Equipo de trabajo en construcción" 
             />
             <div className="why-accent">
-              <div className="why-accent-num">15+</div>
+              <div className="why-accent-num">10+</div>
               <div className="why-accent-text">Años en el<br />mercado</div>
             </div>
           </div>

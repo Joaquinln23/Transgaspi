@@ -1,6 +1,7 @@
 import React from 'react';
 import { COMPANY } from '../data/data';
 import '../styles/components/Footer.css';
+import Logo from './Logo';
 
 export default function Footer() {
   return (
@@ -9,10 +10,9 @@ export default function Footer() {
         <div className="footer-grid">
           <div className="footer-brand">
             <div className="nav-logo">
-              {/* TODO: Agregar componente de Logo aquí */}
-              <div className="nav-brand">{COMPANY.name}</div>
+              <Logo />
             </div>
-            <p>{COMPANY.slogan}</p>
+          <p>{COMPANY.slogan}</p>
           </div>
 
           <div className="footer-col">
@@ -45,7 +45,7 @@ export default function Footer() {
 
         <div className="footer-bottom">
           <p>© 2025 {COMPANY.name} · Todos los derechos reservados</p>
-          <p>Diseño y desarrollo: <a href="#">Tu nombre aquí</a></p>
+          <p>Diseño y desarrollo: <a href="https://joaquincode.vercel.app/"></a>JoaquinCode</p>
         </div>
       </footer>
     </>

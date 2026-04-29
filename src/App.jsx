@@ -11,6 +11,7 @@ import Testimonios from './components/Testimonios';
 import Contacto from './components/Contacto';
 import Footer from './components/Footer';
 import FloatingWhatsApp from './components/FloatingWhatsApp';
+import Proyectos from './components/Proyectos';
 
 export default function App() {
   useScrollReveal();
@@ -24,6 +25,7 @@ export default function App() {
         <Maquinaria />
         <PorQue />
         <Proceso />
+        <Proyectos />
         <Testimonios />
         <Contacto />
       </main>

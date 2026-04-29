@@ -12,15 +12,70 @@ export const COMPANY = {
 };
 
 export const IMAGES = {
+  heroVideo: '/assets/HeroVideo.mp4',
   headerGrua: '/assets/maquinarias/volswagen2.jpeg',
-  porque: '/assets/Porque.jpg',
+  porque: '/assets/maquinarias/faena6.jpeg',
   maquinaria: {
     'Excavadora Doosan DX 140LC': '/assets/maquinarias/doosan1.jpeg',
-    'Camión Tolva VW Constellation': '/assets/maquinarias/volswagen2.jpeg',
+    'Camión Tolva VW Constellation': '/assets/maquinarias/volswagen1.jpeg',
     'Retroexcavadora New Holland': '/assets/maquinarias/newholland1.jpeg',
-    'Minicargador Bobcat': '/assets/maquinarias/bobcat6.jpeg'
+    'Minicargador Bobcat': '/assets/maquinarias/bobcat6.jpeg',
   }
 };
+
+export const PROJECTS = [
+  {
+    id: 1,
+    client: 'Constructora Bitumix',
+    desc: 'Obras plan verano: calzadas, calles (Comunas Lo Barnechea, Vitacura, General Velásquez).',
+    image: '/assets/logomarcas/bitumix.png'
+  },
+  {
+    id: 2,
+    client: 'Constructora Francisco Estrada',
+    desc: 'Construcción de condominios y edificios en varias comunas del sector oriente de Santiago.',
+    image: '/assets/logomarcas/estrada.jpg'
+  },
+  {
+    id: 3,
+    client: 'Constructora IBL',
+    desc: 'Obras varias en condominios y casas (Colina, Lo Barnechea).',
+    image: '/assets/logomarcas/ibl.jpg'
+  },
+  {
+    id: 4,
+    client: 'Restaurante Chilenazo',
+    desc: 'Servicios de demolición de estacionamientos.',
+    image: '/assets/logomarcas/chilenazo.png'
+  },
+  {
+    id: 5,
+    client: 'Medialunas Gil Letelier',
+    desc: 'Reparaciones en Lo Barnechea, Santa Filomena y Colina.',
+    image: '/assets/logomarcas/gil-letelier.jpg'
+  }
+];
+
+export const TESTIMONIALS = [
+  {
+    id: 1,
+    name: 'Gerente de Operaciones',
+    company: 'Constructora Bitumix',
+    quote: 'La puntualidad y el excelente estado de la maquinaria de TRANSGASPI marcaron una diferencia enorme en nuestra última faena. Son socios estratégicos indispensables.'
+  },
+  {
+    id: 2,
+    name: 'Jefe de Terreno',
+    company: 'Constructora Francisco Estrada',
+    quote: 'La excavadora Doosan que arrendamos nos permitió avanzar mucho más rápido de lo previsto. Además, su soporte técnico realmente es 24/7, nos sacaron de un apuro.'
+  },
+  {
+    id: 3,
+    name: 'Administración',
+    company: 'Restaurante Chilenazo',
+    quote: 'Necesitábamos una demolición rápida y sin complicaciones. El equipo de TRANSGASPI fue profesional, ordenado y cumplieron con todo lo acordado en tiempo récord.'
+  }
+];
 
 export const NAV_LINKS = [
   { label: 'Servicios', href: '#servicios' },

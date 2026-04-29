@@ -37,7 +37,7 @@
   bottom: -2px; right: -2px;
   background: var(--yellow);
   color: var(--black);
-  padding: 20px 28px;
+  padding: 5px 10px;
   border-radius: var(--radius) 0 0 0;
 }
 .why-accent-num {

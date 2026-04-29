@@ -15,31 +15,20 @@ export default function Hero() {
   return (
     <>
       <section className="hero" id="inicio">
-        {/* Fondo */}
-        <div className="hero-bg">
-          <div className="hero-bg-img">
-            <img 
-              src="https://images.unsplash.com/photo-1621905251189-08b45d6a268e?auto=format&fit=crop&q=80&w=2000" 
-              alt="Maquinaria pesada" 
-            />
-          </div>
+        {/* 1. Fondo: Video */}
+        <div className="hero-video-container">
+          <video autoPlay loop muted playsInline className="hero-video">
+            <source src={IMAGES.heroVideo} type="video/mp4" />
+          </video>
         </div>
 
-        {/* Imagen lateral destacada (editable via data.js) */}
-        <div className="hero-img-placeholder">
-          <div className="hero-img-container">
-            <img 
-              src={IMAGES.headerGrua}
-              alt="Grúa horquilla"
-            />
-          </div>
-        </div>
-
-        {/* Decorativos */}
+        {/* 2. Decoración: Rayas amarillas (Restauradas) */}
         <div className="hero-stripes" />
+
+        {/* 3. Degradado */}
         <div className="hero-overlay" />
 
-        {/* Contenido principal */}
+        {/* 4. Contenido */}
         <div className="hero-content">
           <div className="hero-tag">Líderes en Arriendo de Maquinaria</div>
           <h1>
@@ -47,37 +36,26 @@ export default function Hero() {
             <em>PROYECTO</em>
           </h1>
           <p className="hero-desc">
-            Maquinaria pesada de construcción disponible cuando la necesitas. Flota moderna,
+            Maquinaria pesada de construcción disponible cuando la necesites. Flota moderna,
             mantenimiento garantizado y soporte técnico 24/7.
           </p>
-          <div className="hero-actions">            
-            <a
-              href="#maquinaria"
-              className="btn-ghost"
-              onClick={(e) => { e.preventDefault(); scrollTo('#maquinaria'); }}
-            >
+          <div className="hero-actions">
+            <a href="#maquinaria" className="btn-ghost" onClick={(e) => { e.preventDefault(); scrollTo('#maquinaria'); }}>
               Ver Maquinaria →
             </a>
-            <a
-              href={waLink('Hola, quiero cotizar maquinaria')}
-              target="_blank"
-              rel="noreferrer"
-              className="btn-primary"
-            >
+            <a href={waLink('+56957914521', 'Hola, quiero cotizar maquinaria')} target="_blank" rel="noreferrer" className="btn-primary">
               <WhatsAppIcon size={18} color="currentColor" />
               Cotizar por WhatsApp
             </a>
           </div>
-        </div>
-
-        {/* Stats bar */}
-        <div className="hero-stats">
-          {STATS.map((s) => (
-            <div className="stat-item" key={s.label}>
-              <div className="stat-num">{s.num}</div>
-              <div className="stat-label">{s.label}</div>
-            </div>
-          ))}
+          <div className="hero-stats">
+            {STATS.map((s) => (
+              <div className="stat-item" key={s.label}>
+                <div className="stat-num">{s.num}</div>
+                <div className="stat-label">{s.label}</div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
     </>

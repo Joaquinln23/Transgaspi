@@ -1,229 +1,95 @@
-/* ===== HERO ===== */
+/* ===== HERO SECTION ===== */
+
 .hero {
   position: relative;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 100px clamp(20px, 6vw, 100px) 0;
-  overflow: hidden;
-}
-
-.hero-bg {
-  position: absolute;
-  inset: 0;
+  align-items: center;
   background: #0a0a0a;
-  z-index: 0;
-}
-
-.hero-bg-img {
-  position: absolute;
-  inset: 0;
   overflow: hidden;
-}
-.hero-bg-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  padding: 100px clamp(20px, 6vw, 100px) 0;
 }
 
-  /* Eliminado el pseudo-elemento ::before del hero-bg-img que oscurecía la imagen */
-  .hero-bg-img::before {
-    display: none;
-  }
 
-/* Imagen lateral de Grúa Horquilla */
-.hero-img-placeholder {
+
+/* Video Lateral (Derecha) */
+.hero-video-container {
   position: absolute;
   right: 0;
   top: 0;
-  width: 60%;
+  width: 54%;
   height: 100%;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  z-index: 1; /* Fondo */
+  overflow: hidden;
+  /* Máscara de desvanecimiento hacia la izquierda */
+  mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 40%);
+  -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 40%);
 }
 
-/* CONTENEDOR DE IMAGEN DINÁMICA */
-.hero-img-container {
+.hero-video {
   width: 100%;
   height: 100%;
-  position: relative;
-  overflow: hidden;
-}
-  .hero-img-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    /* Reducimos la opacidad del desvanecimiento (0.4) para que la imagen se vea más brillante */
-    mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 50%);
-    -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 50%);
-  }
-
-  .hero-overlay {
-    position: absolute;
-    inset: 0;
-    z-index: 2;
-    /* Degradado aún más claro para dejar ver más la imagen */
-    background: linear-gradient(
-      90deg,
-      rgba(10,10,10,0.5) 0%,
-      rgba(10,10,10,0.05) 50%,
-      rgba(10,10,10,0) 100%
-    );
-  }
-
-.hero-stripes {
-  position: absolute;
-  top: 0; left: 0;
-  width: 6px;
-  height: 100%;
-  z-index: 3;
-  background: repeating-linear-gradient(
-    180deg,
-    var(--yellow) 0px,
-    var(--yellow) 40px,
-    transparent 40px,
-    transparent 60px
-  );
-  animation: stripeScroll 4s linear infinite;
+  object-fit: cover;
+  transform: scale(1.0);
+  transition: transform 0.5s ease;
 }
 
-@keyframes stripeScroll {
-  0% { background-position: 0 0; }
-  100% { background-position: 0 100px; }
-}
-
+/* Contenido Principal (Izquierda) */
 .hero-content {
   position: relative;
-  z-index: 4;
+  z-index: 3; /* Adelante */
+  flex: 1;
   max-width: 700px;
-  padding-bottom: clamp(40px, 6vh, 80px);
 }
 
-.hero-tag {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--yellow);
-  margin-bottom: 24px;
-  opacity: 0;
-  animation: fadeUp 0.7s 0.2s forwards;
-}
-.hero-tag::before {
-  content: '';
-  display: block;
-  width: 32px;
-  height: 2px;
-  background: var(--yellow);
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background: linear-gradient(90deg, rgba(10,10,10,1) 0%, rgba(10,10,10,0.3) 50%, rgba(10,10,10,0) 100%);
 }
 
-.hero h1 {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: clamp(52px, 9vw, 130px);
-  line-height: 0.92;
-  letter-spacing: 0.01em;
-  color: var(--white);
-  margin-bottom: 28px;
-  opacity: 0;
-  animation: fadeUp 0.7s 0.4s forwards;
-}
-.hero h1 em {
-  font-style: normal;
-  color: var(--yellow);
-  display: block;
-}
+/* Decoración y Texto (Omitido para brevedad, mantener igual) */
+.hero-stripes { position: absolute; top: 0; left: 0; width: 6px; height: 100%; z-index: 4; background: repeating-linear-gradient(180deg, var(--yellow) 0px, var(--yellow) 40px, transparent 40px, transparent 60px); animation: stripeScroll 4s linear infinite; }
+@keyframes stripeScroll { 0% { background-position: 0 0; } 100% { background-position: 0 100px; } }
 
-.hero-desc {
-  font-size: clamp(15px, 1.8vw, 18px);
-  font-weight: 300;
-  color: var(--white-dim);
-  max-width: 480px;
-  margin-bottom: 48px;
-  line-height: 1.7;
-  opacity: 0;
-  animation: fadeUp 0.7s 0.6s forwards;
-  background: rgba(0, 0, 0, 0.50);
-  backdrop-filter: blur(4px);
-  padding: 10px 14px;
-  border-radius: 4px;
-}
+.hero-tag { display: inline-flex; align-items: center; gap: 8px; font-family: 'Barlow Condensed', sans-serif; font-size: 20px; font-weight: 700; text-transform: uppercase; color: var(--yellow); margin-bottom: 24px; }
+.hero-tag::before { content: ''; width: 32px; height: 2px; background: var(--yellow); }
+
+.hero h1 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(52px, 9vw, 130px); line-height: 0.92; color: var(--white); margin-bottom: 28px; }
+.hero h1 em { font-style: normal; color: var(--yellow); display: block; }
+
+.hero-desc { font-size: 18px; color: var(--white-dim); max-width: 480px; margin-bottom: 48px; line-height: 1.7; }
 
 .hero-actions {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 30px; /* Cambiado de 20px a 30px para mayor separación */
   flex-wrap: wrap;
-  opacity: 0;
-  animation: fadeUp 0.7s 0.8s forwards;
-}
-
-@keyframes fadeUp {
-  from { opacity: 0; transform: translateY(24px); }
-  to { opacity: 1; transform: translateY(0); }
 }
 
 /* Stats bar */
 .hero-stats {
-  position: relative;
-  z-index: 4;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-top: 40px;
   border-top: 1px solid rgba(245,168,0,0.2);
-  margin: 0 calc(-1 * clamp(20px, 6vw, 100px));
-  opacity: 0;
-  animation: fadeUp 0.7s 1s forwards;
+  padding-top: 20px;
 }
+.stat-num { font-family: 'Bebas Neue', sans-serif; font-size: 32px; color: var(--yellow); line-height: 1; }
+.stat-label { font-family: 'Barlow Condensed', sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: var(--steel); margin-top: 4px; }
 
-.stat-item {
-  padding: 22px clamp(16px, 3vw, 40px);
-  border-right: 1px solid rgba(245,168,0,0.1);
-  background: rgba(10,10,10,0.8);
-  backdrop-filter: blur(8px);
-}
-.stat-item:last-child { border-right: none; }
-
-.stat-num {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: clamp(26px, 3vw, 40px);
-  color: var(--yellow);
-  line-height: 1;
-}
-
-.stat-label {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: var(--steel);
-  margin-top: 4px;
-}
-
-/* Responsive Hero */
+/* RESPONSIVE */
 @media (max-width: 900px) {
-  .hero { padding-top: 90px; }
-  .hero-stats { grid-template-columns: repeat(2, 1fr); }
-}
-@media (max-width: 600px) {
-  .hero {
-    padding: 80px 20px 0;
-    min-height: 100svh;
+  .hero { flex-direction: column; padding: 100px 20px 40px; }
+  .hero-content { max-width: 100%; text-align: left;}
+  .hero-video-container {
+    padding-top: 87px;
+    width: 100%; /* En móvil ocupa todo el ancho */
+    height: 100%; /* Ajusta la altura para mantener proporción */
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 30%); /* Máscara vertical */
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 30%);
   }
-  .hero-content { padding-bottom: 32px; }
-  .hero-tag { font-size: 10px; margin-bottom: 16px; }
-  .hero h1 { font-size: clamp(48px, 14vw, 72px); margin-bottom: 18px; }
-  .hero-desc { font-size: 15px; margin-bottom: 32px; }
-  .hero-actions { flex-direction: column; align-items: stretch; gap: 12px; }
-  .btn-primary, .btn-ghost { width: 100%; justify-content: center; padding: 16px 20px; font-size: 15px; }
-  .hero-stats { grid-template-columns: repeat(2, 1fr); margin: 0 -20px; }
-  .stat-item { padding: 18px 16px; }
-  .stat-num { font-size: 28px; }
-  .stat-label { font-size: 10px; }
+  .hero-video { object-fit: cover; }
 }
