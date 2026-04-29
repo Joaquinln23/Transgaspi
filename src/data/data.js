@@ -82,6 +82,8 @@ export const NAV_LINKS = [
   { label: 'Maquinaria', href: '#maquinaria' },
   { label: 'Nosotros', href: '#por-que' },
   { label: 'Proceso', href: '#proceso' },
+  { label: 'Trabajos', href: '#proyectos' },
+  { label: 'Testimonios', href: '#testimonios' },
 ];
 
 export const FILTER_TABS = [

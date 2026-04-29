@@ -39,13 +39,14 @@ export default function Footer() {
               <li><a href="https://wa.me/56957914521" target="_blank" rel="noreferrer">Maritza Ortega: +569 5791 4521</a></li>
               <li><a href="https://wa.me/56971952395" target="_blank" rel="noreferrer">Nelson Ortega: +569 7195 2395</a></li>
               <li>{COMPANY.address}</li>
+              <li>{COMPANY.email}</li>
             </ul>
           </div>
         </div>
 
         <div className="footer-bottom">
           <p>© 2025 {COMPANY.name} · Todos los derechos reservados</p>
-          <p>Diseño y desarrollo: <a href="https://joaquincode.vercel.app/"></a>JoaquinCode</p>
+          <p>Diseño y desarrollo: <a href="https://joaquincode.vercel.app/" target="_blank" rel="noreferrer">JoaquinCode</a></p>
         </div>
       </footer>
     </>
