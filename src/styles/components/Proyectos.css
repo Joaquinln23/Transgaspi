@@ -1,5 +1,5 @@
 #proyectos {
-  background: var(--dark);
+  background:#0a0a0a;
   padding: var(--gap) clamp(20px, 6vw, 100px);
   overflow: hidden;
 }
@@ -21,8 +21,9 @@
 .project-card {
   background: transparent;
   border-radius: var(--radius);
-  padding: 20px;
-  min-width: 350px; /* Le damos un ancho mínimo fijo */
+  padding: 24px;
+  height: 350px;
+  width: 400px;
   display: flex;
   flex-direction: column;
 }
@@ -31,19 +32,17 @@
 
 .project-img {
   width: 100%;
-  height: 150px; /* Altura fija para el área del logo */
-  border-radius: 2px;
-  overflow: hidden;
-  margin-bottom: 15px;
+  height: 150px; 
   display: flex;
-  align-items: center; /* Centrado vertical */
+  align-items: center;    /* Centrado vertical */
   justify-content: center; /* Centrado horizontal */
+  margin-bottom: 15px;
+  border-radius: 4px;
 }
 .project-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  padding: 10px;
+  max-width: 90%;   /* Deja un margen del 10% alrededor */
+  max-height: 90%;  /* Evita que toque los bordes */
+  object-fit: contain; /* Mantiene la proporción sin deformar */
 }
 
 .project-client {
@@ -60,6 +59,7 @@
   /* Opcional: limitar el texto a unas pocas líneas si es muy largo */
   display: -webkit-box;
   -webkit-line-clamp: 3;
+  line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }

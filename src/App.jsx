@@ -7,7 +7,7 @@ import Servicios from './components/Servicios';
 import Maquinaria from './components/Maquinaria';
 import PorQue from './components/PorQue';
 import Proceso from './components/Proceso';
-import Testimonios from './components/Testimonios';
+/*import Testimonios from './components/Testimonios';*/
 import Contacto from './components/Contacto';
 import Footer from './components/Footer';
 import FloatingWhatsApp from './components/FloatingWhatsApp';
@@ -26,7 +26,7 @@ export default function App() {
         <PorQue />
         <Proceso />
         <Proyectos />
-        <Testimonios />
+        {/* <Testimonios /> */}
         <Contacto />
       </main>
       <Footer />

@@ -32,8 +32,8 @@ export default function Hero() {
         <div className="hero-content">
           <div className="hero-tag">Líderes en Arriendo de Maquinaria</div>
           <h1>
-            POTENCIA TU
-            <em>PROYECTO</em>
+            DONDE TODO GRAN
+            <em>PROYECTO COMIENZA</em>
           </h1>
           <p className="hero-desc">
             Maquinaria pesada de construcción disponible cuando la necesites. Flota moderna,

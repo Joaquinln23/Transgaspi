@@ -12,7 +12,7 @@ export const COMPANY = {
 };
 
 export const IMAGES = {
-  heroVideo: '/assets/HeroVideo.mp4',
+  heroVideo: '/assets/Herovideo.mp4',
   headerGrua: '/assets/maquinarias/volswagen2.jpeg',
   porque: '/assets/maquinarias/faena6.jpeg',
   maquinaria: {
@@ -30,17 +30,17 @@ export const PROJECTS = [
     desc: 'Obras plan verano: calzadas, calles (Comunas Lo Barnechea, Vitacura, General Velásquez).',
     image: '/assets/logomarcas/bitumix.png'
   },
-  {
+  /*{
     id: 2,
     client: 'Constructora Francisco Estrada',
     desc: 'Construcción de condominios y edificios en varias comunas del sector oriente de Santiago.',
     image: '/assets/logomarcas/estrada.jpg'
-  },
+  },*/
   {
     id: 3,
     client: 'Constructora IBL',
     desc: 'Obras varias en condominios y casas (Colina, Lo Barnechea).',
-    image: '/assets/logomarcas/ibl.jpg'
+    image: '/assets/logomarcas/ConstructoraIBL.png'
   },
   {
     id: 4,
@@ -52,7 +52,7 @@ export const PROJECTS = [
     id: 5,
     client: 'Medialunas Gil Letelier',
     desc: 'Reparaciones en Lo Barnechea, Santa Filomena y Colina.',
-    image: '/assets/logomarcas/gil-letelier.jpg'
+    image: '/assets/logomarcas/gil-letelier.svg'
   }
 ];
 
@@ -83,7 +83,7 @@ export const NAV_LINKS = [
   { label: 'Nosotros', href: '#por-que' },
   { label: 'Proceso', href: '#proceso' },
   { label: 'Trabajos', href: '#proyectos' },
-  { label: 'Testimonios', href: '#testimonios' },
+  /*{ label: 'Testimonios', href: '#testimonios' },*/
 ];
 
 export const FILTER_TABS = [
