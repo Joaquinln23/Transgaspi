@@ -45,7 +45,7 @@ export default function Footer() {
         </div>
 
         <div className="footer-bottom">
-          <p>© 2025 {COMPANY.name} · Todos los derechos reservados</p>
+          <p>© 2026 {COMPANY.name} · Todos los derechos reservados</p>
           <p>Diseño y desarrollo: <a href="https://joaquincode.vercel.app/" target="_blank" rel="noreferrer">JoaquinCode</a></p>
         </div>
       </footer>
