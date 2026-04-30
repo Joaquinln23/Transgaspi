@@ -137,5 +137,5 @@ export const STATS = [
   { num: '24/7', label: 'Soporte' },
 ];
 
-export const waLink = (phone = '+56957914521', text = 'Hola, necesito información sobre servicios') => 
+export const waLink = (phone = '56957914521', text = 'Hola, necesito información sobre servicios') => 
   `https://wa.me/${phone.replace(/[\s+]/g, '')}?text=${encodeURIComponent(text)}`;
