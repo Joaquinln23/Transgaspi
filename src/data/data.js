@@ -12,7 +12,7 @@ export const COMPANY = {
 };
 
 export const IMAGES = {
-  heroVideo: '/assets/Herovideo.mp4',
+  heroVideo: '/assets/HeroVideo1.mp4',
   headerGrua: '/assets/maquinarias/volswagen2.jpeg',
   porque: '/assets/maquinarias/faena6.jpeg',
   maquinaria: {
