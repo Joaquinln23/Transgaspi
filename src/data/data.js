@@ -6,7 +6,7 @@ export const COMPANY = {
   email: "contacto.transgaspi@gmail.com",
   gerencia: "Maritza Ortega Espinoza",
   contacts: {
-    maritza: { name: 'Maritza Ortega', role: 'Gerente General', phone: '+569 5791 4521' },
+    maritza: { name: 'Maritza Ortega', role: 'Gerente General', phone: '+569 9579 1452' },
     nelson: { name: 'Nelson Ortega', role: 'Jefe en Terreno', phone: '+569 7195 2395' }
   }
 };
