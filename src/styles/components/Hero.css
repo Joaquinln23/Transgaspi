@@ -100,7 +100,7 @@
     min-height: 100vh; 
   }
 
-  .hero h1 { font-size: 60px; } 
+  .hero h1 { font-size: 45px; } 
   
   .hero-content { 
     order:1;
