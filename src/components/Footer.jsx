@@ -36,7 +36,7 @@ export default function Footer() {
           <div className="footer-col">
             <h4>Contacto</h4>
             <ul>
-              <li><a href="https://wa.me/56957914521" target="_blank" rel="noreferrer">Maritza Ortega: +569 5791 4521</a></li>
+              <li><a href="https://wa.me/56995791452" target="_blank" rel="noreferrer">Maritza Ortega: +569 9579 1452</a></li>
               <li><a href="https://wa.me/56971952395" target="_blank" rel="noreferrer">Nelson Ortega: +569 7195 2395</a></li>
               <li>{COMPANY.address}</li>
               <li><a href={`mailto:${COMPANY.email}`}>{COMPANY.email}</a></li>

@@ -43,7 +43,7 @@ export default function Hero() {
             <a href="#maquinaria" className="btn-ghost" onClick={(e) => { e.preventDefault(); scrollTo('#maquinaria'); }}>
               Ver Maquinaria →
             </a>
-            <a href={waLink('+56957914521', 'Hola, quiero cotizar maquinaria')} target="_blank" rel="noreferrer" className="btn-primary">
+            <a href={waLink('+56995791452', 'Hola, quiero cotizar maquinaria')} target="_blank" rel="noreferrer" className="btn-primary">
               <WhatsAppIcon size={18} color="currentColor" />
               Cotizar por WhatsApp
             </a>

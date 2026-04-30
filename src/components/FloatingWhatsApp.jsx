@@ -6,7 +6,7 @@ import '../styles/components/FloatingWhatsApp.css';
 export default function FloatingWhatsApp() {
   return (
     <>
-      <a className="float-wa" href={waLink('+56957914521', 'Hola, necesito información sobre arriendo de maquinaria')} target="_blank" rel="noreferrer" aria-label="Contactar por WhatsApp">
+      <a className="float-wa" href={waLink('+56995791452', 'Hola, necesito información sobre arriendo de maquinaria')} target="_blank" rel="noreferrer" aria-label="Contactar por WhatsApp">
         <span className="float-wa-tooltip">¡Escríbenos ahora!</span>
         <WhatsAppIcon size={30} />
       </a>

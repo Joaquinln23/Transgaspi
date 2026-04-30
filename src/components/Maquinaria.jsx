@@ -88,7 +88,7 @@ export default function Maquinaria() {
                     <span className="price-label">Precio por día</span>
                   </div>
                   <a
-                    href={waLink('+56957914521', m.waText)}
+                    href={waLink('+56995791452', m.waText)}
                     target="_blank"
                     rel="noreferrer"
                     className="btn-quote"
