@@ -5,7 +5,7 @@ import '../styles/components/Proceso.css';
 export default function Proceso() {
   const steps = [
     { num: '01', icon: <MessageSquare size={28} />, title: 'Contáctanos', desc: 'Escríbenos por WhatsApp o llámanos. Cuéntanos qué maquinaria necesitas y cuándo.' },
-    { num: '02', icon: <FileText size={28} />, title: 'Cotización', desc: 'Te enviamos una cotización personalizada en menos de 30 minutos con todos los detalles.' },
+    { num: '02', icon: <FileText size={28} />, title: 'Cotización', desc: 'Te enviamos una cotización personalizada a la brevedad con todos los detalles.' },
     { num: '03', icon: <CheckCircle size={28} />, title: 'Confirmación', desc: 'Aceptas la cotización y firmamos el contrato de arriendo. Proceso 100% digital disponible.' },
     { num: '04', icon: <Truck size={28} />, title: 'Despacho a Obra', desc: 'Coordinamos el traslado y la máquina llega a tu faena lista para operar.' }
   ];

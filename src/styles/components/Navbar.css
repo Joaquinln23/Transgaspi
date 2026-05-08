@@ -11,9 +11,9 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 clamp(20px, 5vw, 80px);
+  padding: 15px clamp(20px, 4vw, 80px);
   /* Altura inicial para que el logo respire */
-  height: 95px;
+  height: 85px;
   background: rgba(10, 10, 10, 0.85);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
