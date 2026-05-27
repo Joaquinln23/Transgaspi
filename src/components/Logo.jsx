@@ -3,7 +3,7 @@ import React from 'react';
 const Logo = () => {
   return (
     <img 
-      src="/assets/logo-transgaspi2.svg" 
+      src="/assets/logo-transgaspi3.svg" 
       alt="Transgaspi" 
       style={{ 
         width: 'auto', 

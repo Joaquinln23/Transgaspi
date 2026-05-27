@@ -16,10 +16,15 @@ export const IMAGES = {
   headerGrua: '/assets/maquinarias/volswagen2.jpeg',
   porque: '/assets/maquinarias/faena6.jpeg',
   maquinaria: {
-    'Excavadora Doosan DX 140LC': '/assets/maquinarias/doosan1.jpeg',
+    'Excavadora Doosan DX 140LC': '/assets/maquinarias/doosan5.jpg',
     'Camión Tolva VW Constellation': '/assets/maquinarias/volswagen1.jpeg',
     'Retroexcavadora New Holland': '/assets/maquinarias/newholland1.jpeg',
     'Minicargador Bobcat': '/assets/maquinarias/bobcat6.jpeg',
+    'Camión Tolva Sinotruk Sitrak G7': '/assets/maquinarias/sitrak2.jpeg',
+    'Excavadora con Martillo Hidráulico': '/assets/maquinarias/doosan4.jpeg',
+    'Minicargador Bobcat S590': '/assets/maquinarias/bobcat2.jpeg',
+    'Remolque Tremac RTCB 18 2 R': '/assets/maquinarias/transporte2.jpeg',
+    'Transporte de Carga Especializada': '/assets/maquinarias/fardos.jpg',
   }
 };
 
@@ -104,7 +109,7 @@ export const MACHINES = [
   {
     id: 2, name: 'Camión Tolva VW Constellation', category: 'transporte', categoryLabel: 'Transporte',
     badge: 'available', badgeLabel: 'Disponible',
-    desc: 'Camión de alto tonelaje para retiro de escombros y transporte de áridos. Capacidad 15-16 m3.',
+    desc: 'Camión de alto tonelaje para retiro de escombros y transporte de áridos. Capacidad 16 m3.',
     specs: [{ key: 'Modelo', val: 'Constellation' }, { key: 'Marca', val: 'VW' }, { key: 'Año', val: '2021-2022' }],
     price: 'Consultar', waText: 'Hola, quiero cotizar el Camión Tolva VW Constellation'
   },
@@ -121,15 +126,77 @@ export const MACHINES = [
     desc: 'Equipado con martillo, aguillón y uñeta. Ideal para espacios reducidos.',
     specs: [{ key: 'Marca', val: 'Bobcat' }, { key: 'Año', val: '2019' }],
     price: 'Consultar', waText: 'Hola, quiero cotizar el Minicargador Bobcat'
-  }
+  },
+    {
+    id: 5, 
+    name: 'Minicargador Bobcat S590', 
+    category: 'otros', 
+    categoryLabel: 'Otros',
+    badge: 'available', 
+    badgeLabel: 'Disponible',
+    desc: 'Minicargador industrial de alto rendimiento, ideal para espacios reducidos.',
+    specs: [{ key: 'Modelo', val: 'S590' }, { key: 'Marca', val: 'Bobcat' }, { key: 'Año', val: '2025' }],
+    price: 'Consultar', 
+    waText: 'Hola, quiero cotizar el Minicargador Bobcat S590'
+  },
+  {
+    id: 6, 
+    name: 'Excavadora con Martillo Hidráulico', 
+    category: 'excavacion', 
+    categoryLabel: 'Excavación',
+    badge: 'available', 
+    badgeLabel: 'Disponible',
+    desc: 'Excavadora industrial de gran precisión y eficiencia para movimientos de tierra.',
+    specs: [{ key: 'Modelo', val: 'ZX60C 5A' }, { key: 'Marca', val: 'Hitachi' }, { key: 'Año', val: '2022' }],
+    price: 'Consultar', 
+    waText: 'Hola, quiero cotizar la Excavadora Hitachi ZX60C 5A'
+  },
+  {
+    id: 7, 
+    name: 'Remolque Tremac RTCB 18 2 R', 
+    category: 'transporte', 
+    categoryLabel: 'Transporte',
+    badge: 'available', 
+    badgeLabel: 'Disponible',
+    desc: 'Remolque industrial diseñado para el traslado seguro y eficiente de maquinaria pesada.',
+    specs: [{ key: 'Modelo', val: 'RTCB 18 2 R' }, { key: 'Marca', val: 'Tremac' }, { key: 'Año', val: '2016' }],
+    price: 'Consultar', 
+    waText: 'Hola, quiero cotizar el Remolque Tremac'
+  },
+  {
+    id: 8, 
+    name: 'Camión Tolva Sinotruk Sitrak G7', 
+    category: 'transporte', 
+    categoryLabel: 'Transporte',
+    badge: 'available', 
+    badgeLabel: 'Disponible',
+    desc: 'Camión tolva de nueva generación con alta capacidad de carga y potencia para faenas exigentes.',
+    specs: [{ key: 'Modelo', val: 'Sitrak G7 Faena' }, { key: 'Marca', val: 'Sinotruk' }, { key: 'Año', val: '2026' }],
+    price: 'Consultar', 
+    waText: 'Hola, quiero cotizar el Camión Tolva Sinotruk Sitrak G7'
+  },
+  {
+  id: 9, 
+  name: 'Transporte de Carga Especializada', 
+  category: 'transporte', 
+  categoryLabel: 'Transporte',
+  badge: 'available', 
+  badgeLabel: 'Disponible',
+  desc: 'Servicio especializado en el traslado de carga agrícola y materiales pesados con total seguridad.',
+  specs: [
+    { key: 'Tipo', val: 'Carga Agrícola' }, 
+    { key: 'Servicio', val: 'Traslado' }
+  ],
+  price: 'Consultar', 
+  waText: 'Hola, quiero cotizar el servicio de transporte de carga especializada'
+}
 ];
 
 export const SERVICES = [
-    { num: '01', title: 'Transporte en general', desc: 'Servicio de transporte de carga para todo tipo de bienes, nacionales o extranjeros.' },
-    { num: '02', title: 'Venta de Materiales Áridos', desc: 'Comercialización y distribución de áridos de alta calidad para construcción.' },
-    { num: '03', title: 'Movimientos de Tierra', desc: 'Preparación de suelos y excavaciones integrales para obras civiles.' },
-    { num: '04', title: 'Excavaciones y demoliciones', desc: 'Servicios de demolición y excavación con maquinaria certificada.' },
-    { num: '05', title: 'Arriendo de Maquinaria', desc: 'Arriendo y sub arriendo de maquinaria pesada para la construcción.' }
+    { num: '01', title: 'Cotización', desc: 'Te enviamos tu presupuesto personalizado con todos los detalles vía correo electrónico.' },
+  { num: '02', title: 'Aceptación', desc: 'Aceptas la cotización o presupuesto vía correo electrónico.' },
+  { num: '03', title: 'Coordinación', desc: 'Coordinamos el traslado de la maquinaria a tu faena según lo acordado.' },
+  { num: '04', title: 'Operación', desc: 'La maquinaria llega a tu obra lista para operar.' }
 ];
 
 export const STATS = [
