@@ -1,48 +1,33 @@
 #proyectos {
-  background:#0a0a0a;
+  background: #0a0a0a;
   padding: var(--gap) clamp(20px, 6vw, 100px);
-  overflow: hidden;
 }
 
-.carousel-container {
-  width: 100%;
-  overflow: hidden;
-  margin-top: 56px;
-  position: relative;
-}
-
-.carousel-track {
-  display: flex;
-  gap: 40px; /* Separación entre elementos */
-  animation: scroll 30s linear infinite; /* Velocidad del scroll */
-  width: max-content;
-}
-
+/* Ajustes para las cards dentro de Splide */
 .project-card {
   background: transparent;
   border-radius: var(--radius);
   padding: 24px;
   height: 350px;
-  width: 400px;
   display: flex;
   flex-direction: column;
+  transition: transform 0.3s ease;
 }
-.project-card:hover { 
-    transform: translateY(-5px); }
+.project-card:hover { transform: translateY(-5px); }
 
 .project-img {
   width: 100%;
   height: 150px; 
   display: flex;
-  align-items: center;    /* Centrado vertical */
-  justify-content: center; /* Centrado horizontal */
+  align-items: center;
+  justify-content: center;
   margin-bottom: 15px;
   border-radius: 4px;
 }
 .project-img img {
-  max-width: 90%;   /* Deja un margen del 10% alrededor */
-  max-height: 90%;  /* Evita que toque los bordes */
-  object-fit: contain; /* Mantiene la proporción sin deformar */
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
 }
 
 .project-client {
@@ -50,21 +35,18 @@
   font-family: 'Bebas Neue', sans-serif;
   font-size: 22px;
   margin-top: auto;
+  margin-bottom: 10px;
 }
-.project-desc {
+.project-details {
   color: var(--steel);
   font-size: 14px;
   line-height: 1.5;
-  margin-top: 8px; /* Espacio debajo del nombre */
-  /* Opcional: limitar el texto a unas pocas líneas si es muy largo */
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
 }
 
-@keyframes scroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+.splide__slide {
+  cursor: grab; /* Indica que se puede agarrar */
+}
+
+.splide__slide:active {
+  cursor: grabbing; /* Indica que está siendo arrastrado */
 }

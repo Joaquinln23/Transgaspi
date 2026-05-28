@@ -12,16 +12,18 @@ export default function Footer() {
             <div className="nav-logo">
               <Logo />
             </div>
-          <p>{COMPANY.slogan}</p>
+            <p>{COMPANY.name}</p> {/* Nombre Legal */}
+            <p>{COMPANY.slogan}</p>
           </div>
 
           <div className="footer-col">
             <h4>Servicios</h4>
             <ul>
               <li><a href="#servicios">Movimiento de tierra</a></li>
-              <li><a href="#servicios">Preparación de suelos</a></li>
-              <li><a href="#servicios">Transporte de materiales</a></li>
-              <li><a href="#servicios">Servicios integrales</a></li>
+              <li><a href="#servicios">Demoliciones varias</a></li>
+              <li><a href="#servicios">Retiro de escombros</a></li>
+              <li><a href="#servicios">Compra y despacho de áridos</a></li>
+              <li><a href="#servicios">Arriendo de maquinaria</a></li>
             </ul>
           </div>
 
@@ -30,14 +32,22 @@ export default function Footer() {
             <ul>
               <li><a href="#maquinaria">Excavadoras</a></li>
               <li><a href="#maquinaria">Camiones Tolva</a></li>
+              <li><a href="#maquinaria">Minicargadores</a></li>
+              <li><a href="#maquinaria">Remolques</a></li>
             </ul>
           </div>
 
           <div className="footer-col">
             <h4>Contacto</h4>
             <ul>
-              <li><a href="https://wa.me/56995791452" target="_blank" rel="noreferrer">Maritza Ortega: +569 9579 1452</a></li>
-              <li><a href="https://wa.me/56971952395" target="_blank" rel="noreferrer">Nelson Ortega: +569 7195 2395</a></li>
+              {/* Nelson Primero */}
+              <li><a href={`https://wa.me/56971952395`} target="_blank" rel="noreferrer">
+                {COMPANY.contacts.nelson.name}: {COMPANY.contacts.nelson.phone}
+              </a></li>
+              {/* Maritza Segundo */}
+              <li><a href={`https://wa.me/56995791452`} target="_blank" rel="noreferrer">
+                {COMPANY.contacts.maritza.name}: {COMPANY.contacts.maritza.phone}
+              </a></li>
               <li>{COMPANY.address}</li>
               <li><a href={`mailto:${COMPANY.email}`}>{COMPANY.email}</a></li>
             </ul>
@@ -45,7 +55,7 @@ export default function Footer() {
         </div>
 
         <div className="footer-bottom">
-          <p>© 2026 {COMPANY.name} · Todos los derechos reservados</p>
+          <p>© 2026 {COMPANY.fantasyName} · Todos los derechos reservados</p>
           <p>Diseño y desarrollo: <a href="https://joaquincode.vercel.app/" target="_blank" rel="noreferrer">JoaquinCode</a></p>
         </div>
       </footer>

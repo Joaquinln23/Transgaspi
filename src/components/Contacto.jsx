@@ -16,14 +16,14 @@ export default function Contacto() {
             </p>
           </div>
           <div className="reveal reveal-delay-3" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '16px' }}>
-            <a href={waLink(COMPANY.contacts.maritza.phone)} target="_blank" rel="noreferrer" className="btn-whatsapp">
-              <span className="wa-icon"><WhatsAppIcon size={28} color="white" /></span>
-              {COMPANY.contacts.maritza.name} - {COMPANY.contacts.maritza.role}
-            </a>
             <a href={waLink(COMPANY.contacts.nelson.phone)} target="_blank" rel="noreferrer" className="btn-whatsapp">
               <span className="wa-icon"><WhatsAppIcon size={28} color="white" /></span>
               {COMPANY.contacts.nelson.name} - {COMPANY.contacts.nelson.role}
             </a>
+            <a href={waLink(COMPANY.contacts.maritza.phone)} target="_blank" rel="noreferrer" className="btn-whatsapp">
+              <span className="wa-icon"><WhatsAppIcon size={28} color="white" /></span>
+              {COMPANY.contacts.maritza.name} - {COMPANY.contacts.maritza.role}
+            </a>            
           </div>
         </div>
       </section>
