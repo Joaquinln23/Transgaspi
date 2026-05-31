@@ -17,14 +17,14 @@ export const IMAGES = {
   porque: '/assets/maquinarias/faena6.jpeg',
   maquinaria: {
     'Excavadora Doosan DX 140LC': '/assets/maquinarias/doosan5.jpg',
-    'Camión Tolva VW Constellation': '/assets/maquinarias/volswagen1.jpeg',
+    'Camión Tolva Volkswagen Constellation': '/assets/maquinarias/volswagen1.jpeg',
     'Retroexcavadora New Holland': '/assets/maquinarias/newholland1.jpeg',
     'Camión Tolva Sinotruk Sitrak G7': '/assets/maquinarias/sitrak2.jpeg',
     'Excavadora con Martillo Hidráulico': '/assets/maquinarias/doosan4.jpeg',
-    'Remolque Tremac RTCB 18 2 R': '/assets/maquinarias/transporte2.jpeg',
+    'Remolque Industrial para Maquinaria Pesada': '/assets/maquinarias/transporte2.jpeg',
     'Transporte de Carga Especializada': '/assets/maquinarias/fardos.jpg',
     'Miniexcavadora Hitachi': '/assets/maquinarias/hitachi1.jpeg',
-    'Remolque minicargador y miniexcavadora': '/assets/maquinarias/transporte1.jpeg',
+    'Remolque': '/assets/maquinarias/transporte1.jpeg',
     'Minicargador Bobcat S650': '/assets/maquinarias/bobcat6.jpeg',
     'Minicargador Bobcat S590 con Martillo Hidráulico': '/assets/maquinarias/bobcat2.jpeg',
   }
@@ -34,14 +34,14 @@ export const PROJECTS = [
   {
     id: 1,
     client: 'Constructora Bitumix',
-    projects: ['Obras plan verano'],
-    services: ['Calzadas', 'Calles (Lo Barnechea, Vitacura, General Velásquez)'],
+    projects: ['Lo Barnechea', 'Vitacura', 'General Velásquez'],
+    services: ['Servicio mantención de calzada', 'Calle'],
     image: '/assets/logomarcas/bitumix.png'
   },
   {
     id: 2,
     client: 'Constructora IBL',
-    projects: ['Condominios', 'Casas (Colina, Lo Barnechea)'],
+    projects: ['Lomas La Dehesa', 'Guay Guay', 'Carrizal', 'Brisas de Chicureo'],
     services: ['Obras varias'],
     image: '/assets/logomarcas/ConstructoraIBL.png'
   },
@@ -54,23 +54,23 @@ export const PROJECTS = [
   },
   {
     id: 4,
-    client: 'Medialuna Gil Letelier',
-    projects: ['Lo Barnechea', 'Peldehue', 'Colina', 'Santa Filomena'],
+    client: 'Medialunas',
+    projects: ['Lo Barnechea', 'Peldehue', 'Colina', 'Santa Filomena', 'Gil Letelier'],
     services: ['Reparaciones medialuna (piso y compactación)'],
     image: '/assets/logomarcas/gil-letelier.svg'
   },
   {
     id: 5,
-    client: 'Constructora C1 LIMITADA',
-    projects: ['Carolina Rabat', 'QIUT', 'Lomas de la dehesa', 'Obras varias'],
-    services: ['Movimiento de tierra', 'Demoliciones', 'Traslado de materiales', 'Traslado de áridos'],
+    client: 'Constructora C1 Limitada',
+    projects: ['Carolina Rabat', 'QIUT', 'Lomas de la Dehesa', 'Obras varias'],
+    services: ['Movimiento de tierra', 'Demoliciones', 'Traslado de materiales', 'Traslado de áridos', 'Arriendo de maquinaria'],
     image: '/assets/logomarcas/C1.jpg'
   },
   {
     id: 6,
-    client: 'CLUB DE GOLF LOMAS LA DEHESA',
+    client: 'Club de Golf Lomas de la Dehesa',
     projects: ['Obra Club de Golf', 'Obras varias'],
-    services: ['Movimiento de tierra', 'Demoliciones', 'Traslado de materiales', 'Traslado de áridos'],
+    services: ['Movimiento de tierra', 'Demoliciones', 'Traslado de materiales', 'Traslado de áridos', 'Arriendo de maquinaria', 'Arriendo diario camión'],
     image: '/assets/logomarcas/golf.jpg'
   },
   {
@@ -82,7 +82,7 @@ export const PROJECTS = [
   },
   {
     id: 8,
-    client: 'CHINA RAILWAY TUNNEL GROUP CO., LTD SUCURSAL CHILE',
+    client: 'CHINA RAILWAY TUNNEL GROUP CO., LTD Sucursal Chile',
     projects: ['Pique Santa Cruz', 'Hospital del Pino', 'Metro estaciones varias'],
     services: ['Movimiento de tierra', 'Excavaciones', 'Arriendo de maquinaria'],
     image: '/assets/logomarcas/crtg.jpg'
@@ -91,8 +91,22 @@ export const PROJECTS = [
     id: 9,
     client: 'Ingex Limitada',
     projects: ['San Cristóbal'],
-    services: ['Movimiento de tierra', 'Demoliciones'],
+    services: ['Traslados de material'],
     image: '/assets/logomarcas/ingex.jpg'
+  },
+  {
+    id: 10,
+    client: 'EBCO',
+    projects: ['Obra Punta de Águila', 'Edificio Cerrillos (San Andrés)'],
+    services: ['Obras varias'],
+    image: '/assets/logomarcas/ebco.jpg'
+  },
+  {
+    id: 11,
+    client: 'INLAC',
+    projects: ['La Fuente','Acuaducto paralelo', 'Santa Blanca'],
+    services: ['Movimiento de tierra', 'Demoliciones', 'Traslado de materiales', 'Traslado de áridos', 'Arriendo de maquinaria'],
+    image: '/assets/logomarcas/inlac.jpeg',
   }
 ];
 
@@ -135,101 +149,209 @@ export const FILTER_TABS = [
 export const MACHINES = [
   // --- EXCAVACIÓN ---
   {
-    id: 1, name: 'Excavadora Doosan DX 140LC', category: 'excavacion', categoryLabel: 'Excavación',
-    badge: 'available', badgeLabel: 'Disponible',
+    id: 1,
+    name: 'Excavadora Doosan DX 140LC',
+    category: 'excavacion',
+    categoryLabel: 'Excavación',
+    badge: 'available',
+    badgeLabel: 'Disponible',
     desc: 'Excavadora de alto tonelaje para excavación general.',
-    specs: [{ key: 'Marca', val: 'Doosan' }, { key: 'Modelo', val: 'DX 140LC' }],
-    price: 'Consultar', waText: 'Hola, quiero cotizar la Excavadora Doosan DX 140LC'
+    specs: [
+      { key: 'Marca', val: 'Doosan' },
+      { key: 'Modelo', val: 'DX 140LC' },
+      { key: 'Año', val: '2024' }
+    ],
+    waText: 'Hola Nelson, quiero cotizar la Excavadora Doosan DX 140LC'
   },
   {
-    id: 2, name: 'Excavadora con Martillo Hidráulico', category: 'excavacion', categoryLabel: 'Excavación',
-    badge: 'available', badgeLabel: 'Disponible',
+    id: 2,
+    name: 'Excavadora con Martillo Hidráulico',
+    category: 'excavacion',
+    categoryLabel: 'Excavación',
+    badge: 'available',
+    badgeLabel: 'Disponible',
     desc: 'Excavadora equipada con martillo para rotura de roca y demoliciones pesadas.',
-    specs: [{ key: 'Marca', val: 'Hitachi' }, { key: 'Modelo', val: 'ZX60C 5A' }],
-    price: 'Consultar', waText: 'Hola, quiero cotizar la Excavadora con Martillo Hidráulico'
+    specs: [
+      { key: 'Marca', val: 'Doosan' },
+      { key: 'Año excavadora', val: '2015' },
+      { key: 'Año martillo', val: '2025' }
+    ],
+    waText: 'Hola Nelson, quiero cotizar la Excavadora con Martillo Hidráulico'
   },
   {
-    id: 3, name: 'Retroexcavadora New Holland', category: 'excavacion', categoryLabel: 'Excavación',
-    badge: 'available', badgeLabel: 'Disponible',
+    id: 3,
+    name: 'Retroexcavadora New Holland',
+    category: 'excavacion',
+    categoryLabel: 'Excavación',
+    badge: 'available',
+    badgeLabel: 'Disponible',
     desc: 'Máquina versátil para obras civiles y movimiento de tierra.',
-    specs: [{ key: 'Marca', val: 'New Holland' }, { key: 'Año', val: '2018' }],
-    price: 'Consultar', waText: 'Hola, quiero cotizar la Retroexcavadora New Holland'
+    specs: [
+      { key: 'Marca', val: 'New Holland' },
+      { key: 'Año', val: '2018' }
+    ],
+    waText: 'Hola Nelson, quiero cotizar la Retroexcavadora New Holland'
   },
   {
-    id: 4, name: 'Miniexcavadora Hitachi', category: 'excavacion', categoryLabel: 'Excavación',
-    badge: 'available', badgeLabel: 'Disponible',
+    id: 4,
+    name: 'Miniexcavadora Hitachi',
+    category: 'excavacion',
+    categoryLabel: 'Excavación',
+    badge: 'available',
+    badgeLabel: 'Disponible',
     desc: 'Miniexcavadora para trabajos de precisión en espacios reducidos.',
-    specs: [{ key: 'Marca', val: 'Hitachi' }, { key: 'Modelo', val: 'ZX60C' }],
-    price: 'Consultar', waText: 'Hola, quiero cotizar la Miniexcavadora Hitachi'
+    specs: [
+      { key: 'Marca', val: 'Hitachi' },
+      { key: 'Modelo', val: 'ZX60C' },
+      { key: 'Año', val: '2022' }
+    ],
+    waText: 'Hola Nelson, quiero cotizar la Miniexcavadora Hitachi'
   },
   {
-    id: 10, 
-    name: 'Minicargador Bobcat S650', 
-    category: 'excavacion', 
+    id: 10,
+    name: 'Minicargador Bobcat S650',
+    category: 'excavacion',
     categoryLabel: 'Excavación',
-    badge: 'available', badgeLabel: 'Disponible',
+    badge: 'available',
+    badgeLabel: 'Disponible',
     desc: 'Minicargador industrial, alta eficiencia y versatilidad.',
-    specs: [{ key: 'Marca', val: 'Bobcat' }, { key: 'Modelo', val: 'S650' }],
-    price: 'Consultar', 
-    waText: 'Hola, quiero cotizar el Minicargador Bobcat S650'
+    specs: [
+      { key: 'Marca', val: 'Bobcat' },
+      { key: 'Modelo', val: 'S650' },
+      { key: 'Año', val: '2019' }
+    ],
+    waText: 'Hola Nelson, quiero cotizar el Minicargador Bobcat S650'
   },
   {
-    id: 11, 
-    name: 'Minicargador Bobcat S590 con Martillo Hidráulico', 
-    category: 'excavacion', 
+    id: 11,
+    name: 'Minicargador Bobcat S590 con Martillo Hidráulico',
+    category: 'excavacion',
     categoryLabel: 'Excavación',
-    badge: 'available', badgeLabel: 'Disponible',
-    desc: 'Minicargador industrial equipado con martillo, ideal para demoliciones en espacios reducidos.',
-    specs: [{ key: 'Marca', val: 'Bobcat' }, { key: 'Accesorio', val: 'Martillo' }],
-    price: 'Consultar', 
-    waText: 'Hola, quiero cotizar el Minicargador Bobcat S590 con Martillo Hidráulico'
+    badge: 'available',
+    badgeLabel: 'Disponible',
+    desc: 'Minicargador industrial equipado con martillo hidráulico. Ideal para rotura de roca en espacios reducidos.',
+    specs: [
+      { key: 'Marca', val: 'Bobcat' },
+      { key: 'Modelo', val: 'S590' },
+      { key: 'Año minicargador', val: '2025' },
+      { key: 'Año martillo', val: '2020' },
+      { key: 'Accesorio', val: 'Martillo Hidráulico' }
+    ],
+    waText: 'Hola Nelson, quiero cotizar el Minicargador Bobcat S590 con Martillo Hidráulico'
   },
 
   // --- TRANSPORTE ---
   {
-    id: 5, name: 'Camión Tolva VW Constellation', category: 'transporte', categoryLabel: 'Transporte',
-    badge: 'available', badgeLabel: 'Disponible',
-    desc: 'Camión de alto tonelaje (16 m3) para retiro de escombros y transporte de áridos.',
-    specs: [{ key: 'Marca', val: 'VW' }, { key: 'Modelo', val: 'Constellation' }],
-    price: 'Consultar', waText: 'Hola, quiero cotizar el Camión Tolva VW Constellation'
+    id: 5,
+    name: 'Camión Tolva Volkswagen Constellation',
+    category: 'transporte',
+    categoryLabel: 'Transporte',
+    badge: 'available',
+    badgeLabel: 'Disponible',
+    desc: 'Camión tolva para retiro de escombros y transporte de áridos.',
+    specs: [
+      { key: 'Marca', val: 'Volkswagen' },
+      { key: 'Modelo', val: 'Constellation' },
+      { key: 'Año', val: '2022' },
+      { key: 'Año', val: '2021' },
+      { key: 'Patente', val: 'PYKD-46' },
+      { key: 'Patente', val: 'RKXY-94' },
+      { key: 'Capacidad', val: '16 m³' }
+    ],
+    waText: 'Hola Nelson, quiero cotizar el Camión Tolva Volkswagen Constellation'
   },
   {
-    id: 6, name: 'Camión Tolva Sinotruk Sitrak G7', category: 'transporte', categoryLabel: 'Transporte',
-    badge: 'available', badgeLabel: 'Disponible',
-    desc: 'Camión tolva de alta capacidad (22 m3) año 2026 para faenas exigentes.',
-    specs: [{ key: 'Marca', val: 'Sinotruk' }, { key: 'Capacidad', val: '22 m3' }],
-    price: 'Consultar', waText: 'Hola, quiero cotizar el Camión Tolva Sinotruk Sitrak G7'
+    id: 6,
+    name: 'Camión Tolva Sinotruk Sitrak G7',
+    category: 'transporte',
+    categoryLabel: 'Transporte',
+    badge: 'available',
+    badgeLabel: 'Disponible',
+    desc: 'Camión tolva de alta capacidad para faenas exigentes.',
+    specs: [
+      { key: 'Marca', val: 'Sinotruk' },
+      { key: 'Modelo', val: 'Sitrak G7' },
+      { key: 'Año', val: '2026' },
+      { key: 'Patente', val: 'VJLT-82' },
+      { key: 'Capacidad', val: '22 m³' }
+    ],
+    waText: 'Hola Nelson, quiero cotizar el Camión Tolva Sinotruk Sitrak G7 (VJLT-82)'
   },
   {
-    id: 7, name: 'Transporte de Carga Especializada', category: 'transporte', categoryLabel: 'Transporte',
-    badge: 'available', badgeLabel: 'Disponible',
+    id: 7,
+    name: 'Transporte de Carga Especializada',
+    category: 'transporte',
+    categoryLabel: 'Transporte',
+    badge: 'available',
+    badgeLabel: 'Disponible',
     desc: 'Servicio especializado en el traslado de carga agrícola y materiales pesados.',
-    specs: [{ key: 'Tipo', val: 'Carga Especial' }, { key: 'Servicio', val: 'Traslado' }],
-    price: 'Consultar', waText: 'Hola, quiero cotizar el transporte de carga'
+    specs: [
+      { key: 'Tipo', val: 'Carga Especial' },
+      { key: 'Servicio', val: 'Traslado' }
+    ],
+    waText: 'Hola Nelson, quiero cotizar el servicio de transporte de carga especializada'
   },
 
   // --- OTROS ---
   {
-    id: 8, name: 'Remolque Tremac RTCB 18 2 R', category: 'otros', categoryLabel: 'Otros',
-    badge: 'available', badgeLabel: 'Disponible',
-    desc: 'Remolque industrial para traslado de maquinaria.',
-    specs: [{ key: 'Marca', val: 'Tremac' }, { key: 'Tipo', val: 'Cama Baja' }],
-    price: 'Consultar', waText: 'Hola, quiero cotizar el Remolque Tremac'
+    id: 8,
+    name: 'Remolque Industrial para Maquinaria Pesada',
+    category: 'otros',
+    categoryLabel: 'Otros',
+    badge: 'available',
+    badgeLabel: 'Disponible',
+    desc: 'Remolque industrial para traslado de maquinaria pesada.',
+    specs: [
+      { key: 'Marca', val: 'Tremac' },
+      { key: 'Modelo', val: 'RTCB 18 2 R' },
+      { key: 'Tipo', val: 'Cama Baja' },
+      { key: 'Año', val: '2016' }
+    ],
+    waText: 'Hola Nelson, quiero cotizar el Remolque Industrial Tremac (2016)'
   },
   {
-    id: 9, name: 'Remolque minicargador y miniexcavadora', category: 'otros', categoryLabel: 'Otros',
-    badge: 'available', badgeLabel: 'Disponible',
-    desc: 'Remolque para traslado de minicargador y miniexcavadora.',
-    specs: [{ key: 'Uso', val: 'Maquinaria pequeña' }],
-    price: 'Consultar', waText: 'Hola, quiero cotizar el Remolque minicargador y miniexcavadora'
+    id: 9,
+    name: 'Remolque',
+    category: 'otros',
+    categoryLabel: 'Otros',
+    badge: 'available',
+    badgeLabel: 'Disponible',
+    desc: 'Remolque para traslado de minicargador, miniexcavadora y maquinaria pequeña.',
+    specs: [
+      { key: 'Uso', val: 'Maquinaria pequeña' },
+      { key: 'Año', val: '2017' }
+    ],
+    waText: 'Hola Nelson, quiero cotizar el Remolque (2017)'
   }
 ];
 
+// Lo que ofrecemos — servicios principales
+export const OFFERED_SERVICES = [
+  { icon: '🏗️', title: 'Movimiento de Tierra', desc: 'Excavaciones, rellenos y nivelaciones para todo tipo de proyecto.' },
+  { icon: '💥', title: 'Demoliciones', desc: 'Demolición controlada de estructuras con maquinaria especializada.' },
+  { icon: '🚛', title: 'Transporte de Áridos', desc: 'Retiro y traslado de escombros, áridos y materiales a granel.' },
+  { icon: '🔧', title: 'Arriendo de Maquinaria', desc: 'Arriendo de excavadoras, minicargadores, camiones y más, con o sin operador.' },
+  { icon: '🪨', title: 'Compactaciones', desc: 'Compactación de suelos para bases y fundaciones de obras civiles.' },
+  { icon: '⚖️', title: 'Compra y Venta de Áridos', desc: 'Comercialización de áridos para construcción y proyectos viales.' },
+  { icon: '🚜', title: 'Traslado de Maquinaria', desc: 'Traslado seguro de maquinaria pesada y equipo especializado en camión cama baja.' },
+  { icon: '🚗', title: 'Arriendo de Vehículos', desc: 'Arriendo de camiones tolva y vehículos de carga para tus faenas.' },
+];
+
+// Proceso de cotización
 export const SERVICES = [
-  { num: '01', title: 'Cotización', desc: 'Respuesta en menos de una hora vía WhatsApp para conversar y entender tu requerimiento.' },
+  { num: '01', title: 'Cotización', desc: 'Cuéntanos qué maquinaria o vehículo necesitas y cuándo. Respuesta en menos de una hora vía WhatsApp.' },
   { num: '02', title: 'Presupuesto', desc: 'Te enviamos un presupuesto personalizado a la brevedad vía correo electrónico.' },
   { num: '03', title: 'Coordinación', desc: 'Aceptas el presupuesto vía correo electrónico o WhatsApp y coordinamos el servicio.' },
   { num: '04', title: 'Despacho', desc: 'Coordinamos el traslado y la maquinaria llega a tu faena lista para operar.' }
+];
+
+// Por qué elegirnos
+export const WHY_CHOOSE_US = [
+  { title: 'Flota 100% Segura — Maquinaria y Vehículos', desc: 'Toda nuestra flota está en perfecto estado operativo, con mantención preventiva y revisiones periódicas.' },
+  { title: 'Operadores y Conductores Calificados', desc: 'Nuestro equipo humano cuenta con experiencia comprobada y las certificaciones necesarias para cada faena.' },
+  { title: 'Maquinaria Certificada', desc: 'Equipos con documentación al día, seguros vigentes y certificaciones técnicas.' },
+  { title: 'Responsabilidad', desc: 'Cumplimos los plazos y condiciones acordadas. Nos hacemos cargo de cada faena con seriedad y compromiso.' },
+  { title: 'Soporte 24/7', desc: 'Atención permanente para emergencias y coordinación en cualquier momento del día.' },
 ];
 
 export const STATS = [
@@ -237,5 +359,12 @@ export const STATS = [
   { num: '24/7', label: 'Soporte' },
 ];
 
-export const waLink = (phone = '+56995791452', text = 'Hola, necesito información sobre servicios') => 
-  `https://wa.me/${phone.replace(/[\s+]/g, '')}?text=${encodeURIComponent(text)}`;
+// WhatsApp — solo Nelson, solo al final
+export const WA_CONTACT = {
+  name: 'Nelson Ortega',
+  role: 'Jefe en Terreno',
+  phone: '+56971952395',
+};
+
+export const waLink = (text = 'Hola Nelson, necesito información sobre servicios de TRANSGASPI') =>
+  `https://wa.me/${WA_CONTACT.phone}?text=${encodeURIComponent(text)}`;

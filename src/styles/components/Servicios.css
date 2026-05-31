@@ -1,3 +1,4 @@
+/* ===== SERVICIOS ===== */
 #servicios {
   background: var(--black);
   position: relative;
@@ -16,7 +17,6 @@
   pointer-events: none;
   letter-spacing: 0.05em;
 }
-
 .services-header {
   display: flex;
   align-items: flex-end;
@@ -25,14 +25,12 @@
   margin-bottom: 64px;
   flex-wrap: wrap;
 }
-
 .services-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 24px;
 }
-
 .service-card {
   background: var(--dark-2);
   padding: 44px 36px;
@@ -53,7 +51,6 @@
 }
 .service-card:hover { background: var(--dark-3); }
 .service-card:hover::after { width: 100%; }
-
 .service-icon {
   width: 44px;
   height: 44px;
@@ -64,16 +61,6 @@
   transition: transform 0.3s;
 }
 .service-card:hover .service-icon { transform: scale(1.1) translateY(-4px); }
-
-.service-num {
-  position: absolute;
-  top: 24px; right: 28px;
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 64px;
-  color: rgba(255,255,255,0.04);
-  line-height: 1;
-}
-
 .service-card h3 {
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 22px;
@@ -83,15 +70,11 @@
   color: var(--white);
   margin-bottom: 12px;
 }
-
 .service-card p {
   font-size: 14px;
   font-weight: 300;
   color: var(--steel);
   line-height: 1.7;
-}
-@media (max-width: 1024px) {
-  .services-grid { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 900px) {
   .services-header { flex-direction: column; align-items: flex-start; gap: 20px; }

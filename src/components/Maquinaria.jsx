@@ -23,7 +23,6 @@ export default function Maquinaria() {
     if (gridRef.current) {
       gridRef.current.querySelectorAll('.reveal').forEach(el => observer.observe(el));
     }
-
     return () => observer.disconnect();
   }, [filtered]);
 
@@ -59,8 +58,8 @@ export default function Maquinaria() {
             >
               {/* Imagen */}
               <div className="machine-img">
-                <img 
-                  src={IMAGES.maquinaria[m.name] || '/assets/placeholder.jpg'} 
+                <img
+                  src={IMAGES.maquinaria[m.name] || '/assets/placeholder.jpg'}
                   alt={m.name}
                   style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover' }}
                 />
@@ -72,7 +71,6 @@ export default function Maquinaria() {
                 <div className="machine-category">{m.categoryLabel}</div>
                 <div className="machine-name">{m.name}</div>
                 <div className="machine-desc">{m.desc}</div>
-
                 <div className="machine-specs">
                   {m.specs.map((spec) => (
                     <div className="spec-item" key={spec.key}>
@@ -82,21 +80,16 @@ export default function Maquinaria() {
                   ))}
                 </div>
 
-                <div className="machine-footer">
-                  <div className="machine-price">
-                    <span className="price-val">{m.price}</span>
-                    <span className="price-label">Precio por día</span>
-                  </div>
-                  <a
-                    href={waLink('+56995791452', m.waText)}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="btn-quote"
-                  >
-                    <WhatsAppIcon size={14} color="#fff" />
-                    Cotizar
-                  </a>
-                </div>
+                {/* Botón WhatsApp — solo al final, solo Nelson */}
+                <a
+                  href={waLink(m.waText)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="machine-wa-btn"
+                >
+                  <WhatsAppIcon />
+                  Cotizar por WhatsApp
+                </a>
               </div>
             </div>
           ))}
@@ -105,4 +98,3 @@ export default function Maquinaria() {
     </>
   );
 }
-

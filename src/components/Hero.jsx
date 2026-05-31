@@ -21,13 +21,10 @@ export default function Hero() {
             <source src={IMAGES.heroVideo} type="video/mp4" />
           </video>
         </div>
-
-        {/* 2. Decoración: Rayas amarillas (Restauradas) */}
+        {/* 2. Decoración: Rayas amarillas */}
         <div className="hero-stripes" />
-
         {/* 3. Degradado */}
         <div className="hero-overlay" />
-
         {/* 4. Contenido */}
         <div className="hero-content">
           <div className="hero-tag">Líderes en Arriendo de Maquinaria</div>
@@ -40,10 +37,19 @@ export default function Hero() {
             mantenimiento garantizado y soporte técnico 24/7.
           </p>
           <div className="hero-actions">
-            <a href="#maquinaria" className="btn-ghost" onClick={(e) => { e.preventDefault(); scrollTo('#maquinaria'); }}>
+            <a
+              href="#maquinaria"
+              className="btn-ghost"
+              onClick={(e) => { e.preventDefault(); scrollTo('#maquinaria'); }}
+            >
               Ver Maquinaria →
             </a>
-            <a href={waLink('+56995791452', 'Hola, quiero cotizar maquinaria')} target="_blank" rel="noreferrer" className="btn-primary">
+            <a
+              href={waLink('Hola Nelson, quiero cotizar maquinaria')}
+              target="_blank"
+              rel="noreferrer"
+              className="btn-primary"
+            >
               <WhatsAppIcon size={18} color="currentColor" />
               Cotizar por WhatsApp
             </a>

@@ -1,35 +1,16 @@
 import React from 'react';
 import { MessageSquare, FileText, CheckCircle, Truck } from 'lucide-react';
 import '../styles/components/Proceso.css';
+import { SERVICES } from '../data/data';
+
+const ICONS = [
+  <MessageSquare size={28} />,
+  <FileText size={28} />,
+  <CheckCircle size={28} />,
+  <Truck size={28} />,
+];
 
 export default function Proceso() {
-  const steps = [
-    { 
-      num: '01', 
-      icon: <MessageSquare size={28} />, 
-      title: 'Contáctanos', 
-      desc: 'Escríbenos por WhatsApp o llámanos. Cuéntanos qué maquinaria necesitas y cuándo.' 
-    },
-    { 
-      num: '02', 
-      icon: <FileText size={28} />, 
-      title: 'Cotización', 
-      desc: 'Te enviamos un presupuesto personalizado con todos los detalles a la brevedad vía correo electrónico.' 
-    },
-    { 
-      num: '03', 
-      icon: <CheckCircle size={28} />, 
-      title: 'Confirmación', 
-      desc: 'Aceptas la cotización o presupuesto también vía correo electrónico para coordinar el servicio.' 
-    },
-    { 
-      num: '04', 
-      icon: <Truck size={28} />, 
-      title: 'Despacho a Obra', 
-      desc: 'Coordinamos el traslado y la maquinaria llega a tu faena lista para operar.' 
-    }
-  ];
-
   return (
     <>
       <section id="proceso">
@@ -38,12 +19,11 @@ export default function Proceso() {
           <h2 className="section-title reveal reveal-delay-1" style={{ textAlign: 'center' }}>PROCESO<br /><span>SIMPLE</span></h2>
           <p className="section-desc reveal reveal-delay-2" style={{ margin: '0 auto 0' }}>Arrendar maquinaria con nosotros es rápido y sin complicaciones.</p>
         </div>
-
         <div className="process-steps">
-          {steps.map((step, i) => (
+          {SERVICES.map((step, i) => (
             <div className={`process-step reveal ${i > 0 ? `reveal-delay-${i}` : ''}`} key={step.num}>
               <div className="step-num">{step.num}</div>
-              <div className="step-icon">{step.icon}</div>
+              <div className="step-icon">{ICONS[i]}</div>
               <h3>{step.title}</h3>
               <p>{step.desc}</p>
             </div>
