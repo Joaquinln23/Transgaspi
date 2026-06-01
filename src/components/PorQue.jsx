@@ -16,7 +16,7 @@ export default function PorQue() {
     <>
       <section id="por-que">
         <div className="section-tag reveal">Por qué elegirnos</div>
-        <h2 className="section-title reveal reveal-delay-1">CONFIANZA<br /><span>Y RESPONSABILIDAD</span></h2>
+        <h2 className="section-title reveal reveal-delay-1">CONFIANZA, POTENCIA<br /><span>Y RESPONSABILIDAD</span></h2>
         <div className="why-grid">
           <div className="why-visual reveal">
             <img

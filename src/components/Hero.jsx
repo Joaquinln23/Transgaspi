@@ -27,7 +27,7 @@ export default function Hero() {
         <div className="hero-overlay" />
         {/* 4. Contenido */}
         <div className="hero-content">
-          <div className="hero-tag">Líderes en Arriendo de Maquinaria</div>
+          <div className="hero-tag">Líderes en Arriendo de Maquinaria y Vehículos</div>
           <h1>
             DONDE TODO GRAN
             <em>PROYECTO COMIENZA</em>

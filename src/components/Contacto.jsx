@@ -25,15 +25,6 @@ export default function Contacto() {
               <span className="wa-icon"><WhatsAppIcon size={28} color="white" /></span>
               {COMPANY.contacts.nelson.name} — {COMPANY.contacts.nelson.role}
             </a>
-            <a
-              href={`https://wa.me/${COMPANY.contacts.maritza.phone.replace(/[\s+]/g, '')}?text=${encodeURIComponent('Hola Maritza, necesito información sobre TRANSGASPI')}`}
-              target="_blank"
-              rel="noreferrer"
-              className="btn-whatsapp btn-whatsapp--small"
-            >
-              <span className="wa-icon"><WhatsAppIcon size={20} color="white" /></span>
-              {COMPANY.contacts.maritza.name} — {COMPANY.contacts.maritza.role}
-            </a>
           </div>
         </div>
       </section>

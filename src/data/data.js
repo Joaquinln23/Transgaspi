@@ -23,10 +23,10 @@ export const IMAGES = {
     'Excavadora con Martillo Hidráulico': '/assets/maquinarias/doosan4.jpeg',
     'Remolque Industrial para Maquinaria Pesada': '/assets/maquinarias/transporte2.jpeg',
     'Transporte de Carga Especializada': '/assets/maquinarias/fardos.jpg',
-    'Miniexcavadora Hitachi': '/assets/maquinarias/hitachi1.jpeg',
+    'Miniexcavadora Hitachi con Operador': '/assets/maquinarias/hitachi1.jpeg',
     'Remolque': '/assets/maquinarias/transporte1.jpeg',
-    'Minicargador Bobcat S650': '/assets/maquinarias/bobcat6.jpeg',
-    'Minicargador Bobcat S590 con Martillo Hidráulico': '/assets/maquinarias/bobcat2.jpeg',
+    'Minicargador Bobcat': '/assets/maquinarias/bobcat6.jpeg',
+    'Minicargador Bobcat con Martillo Hidráulico': '/assets/maquinarias/bobcat2.jpeg',
   }
 };
 
@@ -34,15 +34,15 @@ export const PROJECTS = [
   {
     id: 1,
     client: 'Constructora Bitumix',
-    projects: ['Lo Barnechea', 'Vitacura', 'General Velásquez'],
-    services: ['Servicio mantención de calzada', 'Calle'],
+    projects: ['Lo Barnechea', 'Vitacura', 'General Velásquez', 'Obras varias'],
+    services: ['Servicio de mantención de calzada', 'Veredas', 'Calle', 'Arriendo de camión', 'Arriendo de maquinaria', 'Demolición'],
     image: '/assets/logomarcas/bitumix.png'
   },
   {
     id: 2,
     client: 'Constructora IBL',
     projects: ['Lomas La Dehesa', 'Guay Guay', 'Carrizal', 'Brisas de Chicureo'],
-    services: ['Obras varias'],
+    services: ['Movimiento de tierra', 'Demolición', 'Traslado de material', 'Arriendo de maquinaria', 'Venta de áridos'],
     image: '/assets/logomarcas/ConstructoraIBL.png'
   },
   {
@@ -62,7 +62,7 @@ export const PROJECTS = [
   {
     id: 5,
     client: 'Constructora C1 Limitada',
-    projects: ['Carolina Rabat', 'QIUT', 'Lomas de la Dehesa', 'Obras varias'],
+    projects: ['Carolina Rabat', 'QIU', 'Lomas de la Dehesa', 'Obras varias'],
     services: ['Movimiento de tierra', 'Demoliciones', 'Traslado de materiales', 'Traslado de áridos', 'Arriendo de maquinaria'],
     image: '/assets/logomarcas/C1.jpg'
   },
@@ -97,14 +97,14 @@ export const PROJECTS = [
   {
     id: 10,
     client: 'EBCO',
-    projects: ['Obra Punta de Águila', 'Edificio Cerrillos (San Andrés)'],
-    services: ['Obras varias'],
+    projects: ['Obra Punta de Águila', 'Edificio Cerrillos (San Andrés)', 'Obras varias'],
+    services: ['Servicio de mantención de calzada', 'Veredas', 'Calle', 'Arriendo de camión', 'Arriendo de maquinaria', 'Demolición'],
     image: '/assets/logomarcas/ebco.jpg'
   },
   {
     id: 11,
     client: 'INLAC',
-    projects: ['La Fuente','Acuaducto paralelo', 'Santa Blanca'],
+    projects: ['La Fuente', 'Acueducto Paralelo', 'Santa Blanca'],
     services: ['Movimiento de tierra', 'Demoliciones', 'Traslado de materiales', 'Traslado de áridos', 'Arriendo de maquinaria'],
     image: '/assets/logomarcas/inlac.jpeg',
   }
@@ -159,7 +159,7 @@ export const MACHINES = [
     specs: [
       { key: 'Marca', val: 'Doosan' },
       { key: 'Modelo', val: 'DX 140LC' },
-      { key: 'Año', val: '2024' }
+      { key: 'Año', val: '2015 / 2024' },
     ],
     waText: 'Hola Nelson, quiero cotizar la Excavadora Doosan DX 140LC'
   },
@@ -170,11 +170,12 @@ export const MACHINES = [
     categoryLabel: 'Excavación',
     badge: 'available',
     badgeLabel: 'Disponible',
-    desc: 'Excavadora equipada con martillo para rotura de roca y demoliciones pesadas.',
+    desc: 'Excavadora Doosan equipada con martillo para rotura de roca y demoliciones pesadas.',
     specs: [
       { key: 'Marca', val: 'Doosan' },
-      { key: 'Año excavadora', val: '2015' },
-      { key: 'Año martillo', val: '2025' }
+      { key: 'Modelo', val: 'DX 140LC' },
+      { key: 'Año excavadora', val: '2015 / 2024' },
+      { key: 'Año martillo', val: '2025' },
     ],
     waText: 'Hola Nelson, quiero cotizar la Excavadora con Martillo Hidráulico'
   },
@@ -188,56 +189,55 @@ export const MACHINES = [
     desc: 'Máquina versátil para obras civiles y movimiento de tierra.',
     specs: [
       { key: 'Marca', val: 'New Holland' },
-      { key: 'Año', val: '2018' }
+      { key: 'Año', val: '2018' },
     ],
     waText: 'Hola Nelson, quiero cotizar la Retroexcavadora New Holland'
   },
   {
     id: 4,
-    name: 'Miniexcavadora Hitachi',
+    name: 'Miniexcavadora Hitachi con Operador',
     category: 'excavacion',
     categoryLabel: 'Excavación',
     badge: 'available',
     badgeLabel: 'Disponible',
-    desc: 'Miniexcavadora para trabajos de precisión en espacios reducidos.',
+    desc: 'Miniexcavadora para trabajos de precisión en espacios reducidos, incluye operador.',
     specs: [
       { key: 'Marca', val: 'Hitachi' },
       { key: 'Modelo', val: 'ZX60C' },
-      { key: 'Año', val: '2022' }
+      { key: 'Año', val: '2022' },
     ],
-    waText: 'Hola Nelson, quiero cotizar la Miniexcavadora Hitachi'
+    waText: 'Hola Nelson, quiero cotizar la Miniexcavadora Hitachi con Operador'
   },
   {
     id: 10,
-    name: 'Minicargador Bobcat S650',
+    name: 'Minicargador Bobcat',
     category: 'excavacion',
     categoryLabel: 'Excavación',
     badge: 'available',
     badgeLabel: 'Disponible',
-    desc: 'Minicargador industrial, alta eficiencia y versatilidad.',
+    desc: 'Minicargadores industriales de alta eficiencia y versatilidad.',
     specs: [
       { key: 'Marca', val: 'Bobcat' },
-      { key: 'Modelo', val: 'S650' },
-      { key: 'Año', val: '2019' }
+      { key: 'Modelos', val: 'S650 / S590' },
+      { key: 'Año', val: '2019 / 2025' },
     ],
-    waText: 'Hola Nelson, quiero cotizar el Minicargador Bobcat S650'
+    waText: 'Hola Nelson, quiero cotizar el Minicargador Bobcat'
   },
   {
     id: 11,
-    name: 'Minicargador Bobcat S590 con Martillo Hidráulico',
+    name: 'Minicargador Bobcat con Martillo Hidráulico',
     category: 'excavacion',
     categoryLabel: 'Excavación',
     badge: 'available',
     badgeLabel: 'Disponible',
-    desc: 'Minicargador industrial equipado con martillo hidráulico. Ideal para rotura de roca en espacios reducidos.',
+    desc: 'Minicargadores Bobcat equipados con martillo hidráulico. Ideal para rotura de roca en espacios reducidos.',
     specs: [
       { key: 'Marca', val: 'Bobcat' },
-      { key: 'Modelo', val: 'S590' },
-      { key: 'Año minicargador', val: '2025' },
+      { key: 'Modelos', val: 'S650 / S590' },
+      { key: 'Año minicargador', val: '2019 / 2025' },
       { key: 'Año martillo', val: '2020' },
-      { key: 'Accesorio', val: 'Martillo Hidráulico' }
     ],
-    waText: 'Hola Nelson, quiero cotizar el Minicargador Bobcat S590 con Martillo Hidráulico'
+    waText: 'Hola Nelson, quiero cotizar el Minicargador Bobcat con Martillo Hidráulico'
   },
 
   // --- TRANSPORTE ---
@@ -252,11 +252,8 @@ export const MACHINES = [
     specs: [
       { key: 'Marca', val: 'Volkswagen' },
       { key: 'Modelo', val: 'Constellation' },
-      { key: 'Año', val: '2022' },
-      { key: 'Año', val: '2021' },
-      { key: 'Patente', val: 'PYKD-46' },
-      { key: 'Patente', val: 'RKXY-94' },
-      { key: 'Capacidad', val: '16 m³' }
+      { key: 'Año', val: '2021 / 2022' },
+      { key: 'Capacidad', val: '16 m³' },
     ],
     waText: 'Hola Nelson, quiero cotizar el Camión Tolva Volkswagen Constellation'
   },
@@ -272,10 +269,9 @@ export const MACHINES = [
       { key: 'Marca', val: 'Sinotruk' },
       { key: 'Modelo', val: 'Sitrak G7' },
       { key: 'Año', val: '2026' },
-      { key: 'Patente', val: 'VJLT-82' },
-      { key: 'Capacidad', val: '22 m³' }
+      { key: 'Capacidad', val: '22 m³' },
     ],
-    waText: 'Hola Nelson, quiero cotizar el Camión Tolva Sinotruk Sitrak G7 (VJLT-82)'
+    waText: 'Hola Nelson, quiero cotizar el Camión Tolva Sinotruk Sitrak G7'
   },
   {
     id: 7,
@@ -287,7 +283,7 @@ export const MACHINES = [
     desc: 'Servicio especializado en el traslado de carga agrícola y materiales pesados.',
     specs: [
       { key: 'Tipo', val: 'Carga Especial' },
-      { key: 'Servicio', val: 'Traslado' }
+      { key: 'Servicio', val: 'Traslado' },
     ],
     waText: 'Hola Nelson, quiero cotizar el servicio de transporte de carga especializada'
   },
@@ -305,9 +301,9 @@ export const MACHINES = [
       { key: 'Marca', val: 'Tremac' },
       { key: 'Modelo', val: 'RTCB 18 2 R' },
       { key: 'Tipo', val: 'Cama Baja' },
-      { key: 'Año', val: '2016' }
+      { key: 'Año', val: '2016' },
     ],
-    waText: 'Hola Nelson, quiero cotizar el Remolque Industrial Tremac (2016)'
+    waText: 'Hola Nelson, quiero cotizar el Remolque Industrial Tremac'
   },
   {
     id: 9,
@@ -319,9 +315,9 @@ export const MACHINES = [
     desc: 'Remolque para traslado de minicargador, miniexcavadora y maquinaria pequeña.',
     specs: [
       { key: 'Uso', val: 'Maquinaria pequeña' },
-      { key: 'Año', val: '2017' }
+      { key: 'Año', val: '2017' },
     ],
-    waText: 'Hola Nelson, quiero cotizar el Remolque (2017)'
+    waText: 'Hola Nelson, quiero cotizar el Remolque'
   }
 ];
 
@@ -329,18 +325,18 @@ export const MACHINES = [
 export const OFFERED_SERVICES = [
   { icon: '🏗️', title: 'Movimiento de Tierra', desc: 'Excavaciones, rellenos y nivelaciones para todo tipo de proyecto.' },
   { icon: '💥', title: 'Demoliciones', desc: 'Demolición controlada de estructuras con maquinaria especializada.' },
-  { icon: '🚛', title: 'Transporte de Áridos', desc: 'Retiro y traslado de escombros, áridos y materiales a granel.' },
-  { icon: '🔧', title: 'Arriendo de Maquinaria', desc: 'Arriendo de excavadoras, minicargadores, camiones y más, con o sin operador.' },
+  { icon: '🚛', title: 'Transporte de Tierra y Escombros', desc: 'Retiro y traslado de tierra y escombros, áridos y materiales.' },
+  { icon: '🔧', title: 'Arriendo de Maquinaria', desc: 'Arriendo de excavadoras, minicargadores, miniexcavadoras y más, con o sin operador.' },
   { icon: '🪨', title: 'Compactaciones', desc: 'Compactación de suelos para bases y fundaciones de obras civiles.' },
   { icon: '⚖️', title: 'Compra y Venta de Áridos', desc: 'Comercialización de áridos para construcción y proyectos viales.' },
-  { icon: '🚜', title: 'Traslado de Maquinaria', desc: 'Traslado seguro de maquinaria pesada y equipo especializado en camión cama baja.' },
+  { icon: '🚜', title: 'Traslado de Maquinaria', desc: 'Traslado seguro de maquinaria pesada y maquinaria pequeña, equipo especializado en camión cama baja.' },
   { icon: '🚗', title: 'Arriendo de Vehículos', desc: 'Arriendo de camiones tolva y vehículos de carga para tus faenas.' },
 ];
 
 // Proceso de cotización
 export const SERVICES = [
   { num: '01', title: 'Cotización', desc: 'Cuéntanos qué maquinaria o vehículo necesitas y cuándo. Respuesta en menos de una hora vía WhatsApp.' },
-  { num: '02', title: 'Presupuesto', desc: 'Te enviamos un presupuesto personalizado a la brevedad vía correo electrónico.' },
+  { num: '02', title: 'Presupuesto', desc: 'Te enviamos un presupuesto personalizado a la brevedad vía correo electrónico o WhatsApp.' },
   { num: '03', title: 'Coordinación', desc: 'Aceptas el presupuesto vía correo electrónico o WhatsApp y coordinamos el servicio.' },
   { num: '04', title: 'Despacho', desc: 'Coordinamos el traslado y la maquinaria llega a tu faena lista para operar.' }
 ];

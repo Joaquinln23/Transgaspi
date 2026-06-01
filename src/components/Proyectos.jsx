@@ -54,6 +54,13 @@ export default function Proyectos() {
           </SplideSlide>
         ))}
       </Splide>
+
+      {/* Bloque "y muchos más clientes" */}
+      <div className="projects-more">
+        <p className="projects-more-text">
+          Y muchos más clientes en construcción, obras civiles e infraestructura que han confiado en nosotros a lo largo de estos años.
+        </p>
+      </div>
     </section>
   );
 }

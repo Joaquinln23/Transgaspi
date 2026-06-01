@@ -17,7 +17,7 @@
 
 .project-img {
   width: 100%;
-  height: 150px; 
+  height: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -37,6 +37,7 @@
   margin-top: auto;
   margin-bottom: 10px;
 }
+
 .project-details {
   color: var(--steel);
   font-size: 14px;
@@ -44,10 +45,30 @@
 }
 
 .splide__slide {
-  cursor: grab; /* Indica que se puede agarrar */
-  touch-action: pan-y; 
+  cursor: grab;
+  touch-action: pan-y;
+}
+.splide__slide:active {
+  cursor: grabbing;
 }
 
-.splide__slide:active {
-  cursor: grabbing; /* Indica que está siendo arrastrado */
+/* Bloque "y muchos más clientes" */
+.projects-more {
+  margin-top: 48px;
+  text-align: center;
+  padding: 28px 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+.projects-more-text {
+  font-size: 15px;
+  font-weight: 300;
+  color: var(--steel);
+  line-height: 1.7;
+  max-width: 600px;
+  margin: 0 auto;
+  font-style: italic;
+}
+.projects-more-text::before {
+  content: '— ';
+  color: var(--yellow);
 }

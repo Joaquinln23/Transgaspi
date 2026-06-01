@@ -21,9 +21,8 @@ export default function Footer() {
             <ul>
               <li><a href="#servicios">Movimiento de tierra</a></li>
               <li><a href="#servicios">Demoliciones</a></li>
-              <li><a href="#servicios">Transporte de áridos</a></li>
+              <li><a href="#servicios">Transporte y retiro de tierra y escombros</a></li>
               <li><a href="#servicios">Compra y venta de áridos</a></li>
-              <li><a href="#servicios">Arriendo de maquinaria</a></li>
               <li><a href="#servicios">Compactaciones</a></li>
               <li><a href="#servicios">Traslado de maquinaria</a></li>
               <li><a href="#servicios">Arriendo de vehículos</a></li>
@@ -31,10 +30,11 @@ export default function Footer() {
           </div>
 
           <div className="footer-col">
-            <h4>Maquinaria</h4>
+            <h4>Maquinaria y Vehiculos</h4>
             <ul>
               <li><a href="#maquinaria">Excavadoras</a></li>
               <li><a href="#maquinaria">Retroexcavadora</a></li>
+              <li><a href="#maquinaria">Miniexcavadora</a></li>
               <li><a href="#maquinaria">Minicargadores</a></li>
               <li><a href="#maquinaria">Camiones Tolva</a></li>
               <li><a href="#maquinaria">Remolques</a></li>
@@ -45,11 +45,16 @@ export default function Footer() {
             <h4>Contacto</h4>
             <ul>
               <li>
-                <a href={`https://wa.me/56971952395`} target="_blank" rel="noreferrer">
-                  {COMPANY.contacts.nelson.name}: {COMPANY.contacts.nelson.phone}
+                <a href={`https://wa.me/${COMPANY.contacts.nelson.phone.replace(/[\s+]/g, '')}`} target="_blank" rel="noreferrer">
+                  {COMPANY.contacts.nelson.name} — {COMPANY.contacts.nelson.role}
                 </a>
+                <span className="footer-phone">{COMPANY.contacts.nelson.phone}</span>
               </li>
-              <li>{COMPANY.address}</li>
+              <li style={{ marginTop: '10px' }}>
+                <span>{COMPANY.contacts.maritza.name} — {COMPANY.contacts.maritza.role}</span>
+                <span className="footer-phone">{COMPANY.contacts.maritza.phone}</span>
+              </li>
+              <li style={{ marginTop: '10px' }}>{COMPANY.address}</li>
               <li><a href={`mailto:${COMPANY.email}`}>{COMPANY.email}</a></li>
             </ul>
           </div>
