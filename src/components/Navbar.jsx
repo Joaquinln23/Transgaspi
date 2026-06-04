@@ -39,7 +39,7 @@ export default function Navbar() {
           </li>
         ))}
         <li>
-          <a href={waLink()} target="_blank" rel="noreferrer" className="nav-cta" onClick={closeMenu}>
+          <a href="#contacto" className="nav-cta" onClick={(e) => { e.preventDefault(); scrollTo('#contacto'); closeMenu(); }}>
             <WhatsAppIcon size={16} color="#fff" />
             Cotizar
           </a>

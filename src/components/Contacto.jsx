@@ -12,7 +12,7 @@ export default function Contacto() {
             <div className="section-tag reveal">Contáctanos Ahora</div>
             <h2 className="cta-title reveal reveal-delay-1">{COMPANY.name}<br /><span>{COMPANY.slogan}</span></h2>
             <p className="cta-desc reveal reveal-delay-2">
-              Contáctanos directamente con nuestro equipo para cotizaciones rápidas.
+              Contáctenos directamente, para contar con una rápida cotización.
             </p>
           </div>
           <div className="reveal reveal-delay-3" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '16px' }}>
@@ -23,7 +23,7 @@ export default function Contacto() {
               className="btn-whatsapp"
             >
               <span className="wa-icon"><WhatsAppIcon size={28} color="white" /></span>
-              {COMPANY.contacts.nelson.name} — {COMPANY.contacts.nelson.role}
+              {'Nelson Ortega'} — {COMPANY.contacts.nelson.role}
             </a>
           </div>
         </div>

@@ -6,8 +6,8 @@ export const COMPANY = {
   email: "contacto.transgaspi@gmail.com",
   gerencia: "Maritza Ortega Espinoza",
   contacts: {
-    nelson: { name: 'Nelson Ortega', role: 'Jefe en Terreno', phone: '+569 7195 2395' },
-    maritza: { name: 'Maritza Ortega', role: 'Gerente General', phone: '+569 9579 1452' }
+    nelson: { name: 'Nelson Ortega Espinoza', role: 'Jefe en Terreno', phone: '+569 7195 2395' },
+    maritza: { name: 'Maritza Ortega Espinoza', role: 'Gerente General', phone: '+569 9579 1452' }
   }
 };
 
@@ -23,7 +23,7 @@ export const IMAGES = {
     'Excavadora con Martillo Hidráulico': '/assets/maquinarias/doosan4.jpeg',
     'Remolque Industrial para Maquinaria Pesada': '/assets/maquinarias/transporte2.jpeg',
     'Transporte de Carga Especializada': '/assets/maquinarias/fardos.jpg',
-    'Miniexcavadora Hitachi con Operador': '/assets/maquinarias/hitachi1.jpeg',
+    'Miniexcavadora Hitachi': '/assets/maquinarias/hitachi1.jpeg',
     'Remolque': '/assets/maquinarias/transporte1.jpeg',
     'Minicargador Bobcat': '/assets/maquinarias/bobcat6.jpeg',
     'Minicargador Bobcat con Martillo Hidráulico': '/assets/maquinarias/bobcat2.jpeg',
@@ -98,7 +98,7 @@ export const PROJECTS = [
     id: 10,
     client: 'EBCO',
     projects: ['Obra Punta de Águila', 'Edificio Cerrillos (San Andrés)', 'Obras varias'],
-    services: ['Servicio de mantención de calzada', 'Veredas', 'Calle', 'Arriendo de camión', 'Arriendo de maquinaria', 'Demolición'],
+    services: ['Compra/venta de áridos', 'Arriendo de camión', 'Arriendo de maquinaria','Movimiento de tierra','Traslado de materiales', 'Demolición'],
     image: '/assets/logomarcas/ebco.jpg'
   },
   {
@@ -135,7 +135,7 @@ export const NAV_LINKS = [
   { label: 'Servicios', href: '#servicios' },
   { label: 'Maquinaria', href: '#maquinaria' },
   { label: 'Nosotros', href: '#por-que' },
-  { label: 'Proceso', href: '#proceso' },
+  { label: 'Proceso de cotización', href: '#proceso' },
   { label: 'Trabajos', href: '#proyectos' },
 ];
 
@@ -195,12 +195,12 @@ export const MACHINES = [
   },
   {
     id: 4,
-    name: 'Miniexcavadora Hitachi con Operador',
+    name: 'Miniexcavadora Hitachi',
     category: 'excavacion',
     categoryLabel: 'Excavación',
     badge: 'available',
     badgeLabel: 'Disponible',
-    desc: 'Miniexcavadora para trabajos de precisión en espacios reducidos, incluye operador.',
+    desc: 'Miniexcavadora para trabajos de precisión en espacios reducidos',
     specs: [
       { key: 'Marca', val: 'Hitachi' },
       { key: 'Modelo', val: 'ZX60C' },
@@ -325,12 +325,12 @@ export const MACHINES = [
 export const OFFERED_SERVICES = [
   { icon: '🏗️', title: 'Movimiento de Tierra', desc: 'Excavaciones, rellenos y nivelaciones para todo tipo de proyecto.' },
   { icon: '💥', title: 'Demoliciones', desc: 'Demolición controlada de estructuras con maquinaria especializada.' },
-  { icon: '🚛', title: 'Transporte de Tierra y Escombros', desc: 'Retiro y traslado de tierra y escombros, áridos y materiales.' },
-  { icon: '🔧', title: 'Arriendo de Maquinaria', desc: 'Arriendo de excavadoras, minicargadores, miniexcavadoras y más, con o sin operador.' },
+  { icon: '🚛', title: 'Transporte de Carga', desc: 'Retiro y traslado de tierra, escombros y materiales varios' },
+  { icon: '🔧', title: 'Arriendo de Maquinaria', desc: 'Arriendo de excavadoras, minicargadores, miniexcavadoras y más, con operador.' },
   { icon: '🪨', title: 'Compactaciones', desc: 'Compactación de suelos para bases y fundaciones de obras civiles.' },
   { icon: '⚖️', title: 'Compra y Venta de Áridos', desc: 'Comercialización de áridos para construcción y proyectos viales.' },
   { icon: '🚜', title: 'Traslado de Maquinaria', desc: 'Traslado seguro de maquinaria pesada y maquinaria pequeña, equipo especializado en camión cama baja.' },
-  { icon: '🚗', title: 'Arriendo de Vehículos', desc: 'Arriendo de camiones tolva y vehículos de carga para tus faenas.' },
+  { icon: '🚗', title: 'Arriendo de Vehículos', desc: 'Arriendo de camiones tolva y vehículos de carga para tus faenas, con conductor.' },
 ];
 
 // Proceso de cotización

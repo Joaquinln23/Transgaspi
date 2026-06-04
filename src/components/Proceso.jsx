@@ -17,7 +17,7 @@ export default function Proceso() {
         <div style={{ textAlign: 'center', maxWidth: '600px', margin: '0 auto' }}>
           <div className="section-tag reveal" style={{ justifyContent: 'center' }}>Cómo Funciona</div>
           <h2 className="section-title reveal reveal-delay-1" style={{ textAlign: 'center' }}>PROCESO<br /><span>SIMPLE</span></h2>
-          <p className="section-desc reveal reveal-delay-2" style={{ margin: '0 auto 0' }}>Arrendar maquinaria con nosotros es rápido y sin complicaciones.</p>
+          <p className="section-desc reveal reveal-delay-2" style={{ margin: '0 auto 0' }}>Arrendar maquinarias, vehículos y servicios con nosotros es rápido y sin complicaciones.</p>
         </div>
         <div className="process-steps">
           {SERVICES.map((step, i) => (
