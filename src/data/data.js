@@ -102,12 +102,20 @@ export const PROJECTS = [
     image: '/assets/logomarcas/ebco.jpg'
   },
   {
-    id: 11,
-    client: 'INLAC',
-    projects: ['La Fuente', 'Acueducto Paralelo', 'Santa Blanca'],
-    services: ['Movimiento de tierra', 'Demoliciones', 'Traslado de materiales', 'Traslado de áridos', 'Arriendo de maquinaria'],
-    image: '/assets/logomarcas/inlac.jpeg',
-  }
+  id: 11,
+  client: 'INLAC',
+  projects: [
+    'Estanques San José de Chucunco',
+    'Estanques San Enrique',
+    'Acueducto y Colector El Carmen',
+    'Santa Blanca',
+    'Vitacura',
+    'Metro Baquedano',
+    'Obras varias'
+  ],
+  services: ['Movimiento de tierra', 'Demoliciones', 'Traslado de materiales', 'Traslado de áridos', 'Arriendo de maquinaria'],
+  image: '/assets/logomarcas/inlac.jpeg',
+}
 ];
 
 export const TESTIMONIALS = [
