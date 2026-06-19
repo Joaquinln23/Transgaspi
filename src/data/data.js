@@ -41,7 +41,7 @@ export const PROJECTS = [
   {
     id: 2,
     client: 'Constructora IBL',
-    projects: ['Lomas La Dehesa', 'Guay Guay', 'Carrizal', 'Brisas de Chicureo'],
+    projects: ['Lomas La Dehesa', 'Guay Guay', 'Carrizal', 'Brisas de Chicureo', 'Obras varias'],
     services: ['Movimiento de tierra', 'Demolición', 'Traslado de material', 'Arriendo de maquinaria', 'Venta de áridos'],
     image: '/assets/logomarcas/ConstructoraIBL.png'
   },
