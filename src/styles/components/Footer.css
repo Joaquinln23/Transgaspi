@@ -41,6 +41,46 @@ footer {
 }
 .footer-col ul a:hover { color: var(--white); }
 
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  
+}
+
+.footer-contact h4 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--yellow);
+  margin-bottom: 4px;
+}
+
+.footer-contact p {
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--steel);
+  line-height: 1.7;
+  margin: 0;
+  
+}
+
+.footer-contact li {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.footer-contact a {
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--white);
+  transition: color 0.2s;
+}
+
 /* Número de teléfono debajo del nombre */
 .footer-phone {
   font-size: 13px;

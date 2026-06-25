@@ -41,7 +41,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div className="footer-col">
+          <div className="footer-contact">
             <h4>Contacto</h4>
             <ul>
               <li>
